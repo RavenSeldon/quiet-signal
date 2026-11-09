@@ -1,0 +1,154 @@
+{
+  "record_format": "hatchery-record/0",
+  "id": "aster",
+  "displayName": "Aster",
+  "description": "A celestial fox who notices, corrects, and finds the light again.",
+  "measured": {
+    "date": "2026-10-22",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "dcb8309d737ca7d774c4057b96ded8d73299465e6b8fbd9aa4a0a89c2e6c9e28",
+      "rgba_v1_sha256": "0f9169505449d960355912bd269bcd60862e050fa93e27fd7aab5e99e492dba0",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "d4dd9f0988b6f1a2435b0da447e1068334653d252f01a02f9f66a86da0bdc572"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Manifest",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "pet.json complete",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Format",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "1536 × 2288, webp, alpha; 9 states + 2 extra rows",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Frames",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "no clipping, no chroma residue, no outliers, no loose bits",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Registration",
+        "tool": "hatchery check 0.1.0",
+        "result": "flag",
+        "summary": "contact line at y 201 ± 4; accepted as drawn: failed",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Scale",
+        "tool": "hatchery check 0.1.0",
+        "result": "not configured",
+        "summary": "no fiducial set; add one to hatchery.json to measure scale (SPEC.md)",
+        "date": "2026-10-22"
+      }
+    ],
+    "verdict": "fair"
+  },
+  "human": {
+    "designer": "Ben Amuwo",
+    "original_design": "Mockups made partly by hand and partly with GPT. Ben starts from a general anatomical silhouette. Aster is an original character.",
+    "ai_assisted_production": {
+      "model": "GPT 5.6 Sol, in ChatGPT",
+      "seed_prompt_version": "Several versions over its development; the most recent work used v3.3",
+      "method": "From the silhouette, GPT 5.6 Sol builds the model, rigs it and builds out the animations, guided by the Hatchery seed prompt"
+    },
+    "manual_refinement": [
+      "None"
+    ],
+    "rights": {
+      "basis": "Aster is an original character created by the designer.",
+      "licence": "Aster can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Fair: passed the hatchery manifest, format and frame checks, with a failed-row registration finding that Ben accepted as drawn (hatchery 0.1.0), 22 October 2026.",
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": null,
+      "status": "not submitted",
+      "submitted": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "comparison": "system NumPy installation versus project wheel installation, all numeric metric cells",
+  "checked_cells": 74240,
+  "nonidentical_float_cells": 9743,
+  "max_absolute_difference": 1.4210854715202004e-14,
+  "tolerance": 1e-10,
+  "note": "Package versions alone need not identify numerical-library builds. Cross-environment bytes are not promised."
+}

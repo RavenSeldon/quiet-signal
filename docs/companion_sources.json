@@ -1,0 +1,152 @@
+[
+  {
+    "path": "~/Root/Hatchery/pets/piko/pet.json",
+    "copy": "web/assets/piko/pet.json",
+    "sha256": "7faa8d349ac94ca6e87f6ab6824a5b35b1d7322bda5d33b8b26bb6f352f836fe"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/piko/record.json",
+    "copy": "web/assets/piko/record.json",
+    "sha256": "7f60ce8171363868c00c306348890a8588ab9c027fe1c61803c2cba1bd07c100"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/piko/spritesheet.webp",
+    "copy": "web/assets/piko/spritesheet.webp",
+    "sha256": "b5de5ecc0705f48511d1e65d16f0c9252c09636bd8131dc6cf45f1e72f4d6a8c"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/aster/pet.json",
+    "copy": "web/assets/aster/pet.json",
+    "sha256": "d4dd9f0988b6f1a2435b0da447e1068334653d252f01a02f9f66a86da0bdc572"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/aster/record.json",
+    "copy": "web/assets/aster/record.json",
+    "sha256": "99e50d0fbf264b9b69c17366898f47ee4531e32fde3f4757dff6a671a27ae533"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/aster/spritesheet.webp",
+    "copy": "web/assets/aster/spritesheet.webp",
+    "sha256": "dcb8309d737ca7d774c4057b96ded8d73299465e6b8fbd9aa4a0a89c2e6c9e28"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/nacre/pet.json",
+    "copy": "web/assets/nacre/pet.json",
+    "sha256": "e18ae64bed2036690573ad7feed925ff098ca2a939187643c07230b2f536ccd1"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/nacre/record.json",
+    "copy": "web/assets/nacre/record.json",
+    "sha256": "c78341b50244d7c9ac4196432ae2595fc9088b7fdd74df347f941079576bede1"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/nacre/spritesheet.webp",
+    "copy": "web/assets/nacre/spritesheet.webp",
+    "sha256": "96666e82e005d72c932ba0bc5e51869cbf502222dd5d0f82158122f86d38ce03"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/bookworm/pet.json",
+    "copy": "web/assets/bookworm/pet.json",
+    "sha256": "653d2d0dc93a0ff1b170d58267e4310c773cc71986af1c65401c202e2d1d8c32"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/bookworm/record.json",
+    "copy": "web/assets/bookworm/record.json",
+    "sha256": "5bade97fce07a20562dec0c9159b6829db83a9b7ee4e71758678b20df26aade7"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/bookworm/spritesheet.webp",
+    "copy": "web/assets/bookworm/spritesheet.webp",
+    "sha256": "2586fbfa40f97edf8995b7f08333469cfcc2a5b8680b2bd66319be3a9bff714c"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/ajita/pet.json",
+    "copy": "web/assets/ajita/pet.json",
+    "sha256": "fc7a23a1f3957b411f5fffb6f615791b2ff851c3fece0632ed384d6f8d207e16"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/ajita/record.json",
+    "copy": "web/assets/ajita/record.json",
+    "sha256": "d8b5659f29c94c83caf659be61622c9ebd13ba7de3b9b149c5fe01133d13e45e"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/ajita/spritesheet.webp",
+    "copy": "web/assets/ajita/spritesheet.webp",
+    "sha256": "524adfaefd648dfeb7708e2d0d85f65619d4b41c1a61005d1561da710798b2da"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/batrina/pet.json",
+    "copy": "web/assets/batrina/pet.json",
+    "sha256": "87b72b465734a400d6b1f1c7546894d2e41224d010ed175d31d7ef166e86ec0a"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/batrina/record.json",
+    "copy": "web/assets/batrina/record.json",
+    "sha256": "6e369934ad98a768eb5ef1014fb8a527f90a4ab166ffcb74fa8ebd9e8badf6ac"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/batrina/spritesheet.webp",
+    "copy": "web/assets/batrina/spritesheet.webp",
+    "sha256": "d6e20c4cb8c94046acf9d51a89ec520762f3643dfa0dc247a5cae9c7e981d0c0"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/hel/pet.json",
+    "copy": "web/assets/hel/pet.json",
+    "sha256": "d0827cacaed59a6108ccafb8c6d7d0bd7e780cae838d590291249c3629d3857a"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/hel/record.json",
+    "copy": "web/assets/hel/record.json",
+    "sha256": "bf13d3648e9ed2228baea73aeea2a6c6c275dc92e1c6b24769d6861c0152ce21"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/hel/spritesheet.webp",
+    "copy": "web/assets/hel/spritesheet.webp",
+    "sha256": "02dff3fb5e51a9bc807a4df8b9009889aae093e7a3e41a393aeebc4dfc8f202f"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/jayke/pet.json",
+    "copy": "web/assets/jayke/pet.json",
+    "sha256": "ecfc568dff736a715312ef19607a398172c23e59acde771e3641c91c318739c9"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/jayke/record.json",
+    "copy": "web/assets/jayke/record.json",
+    "sha256": "cb54264e6577a016c665d8f2614624a5c3ea9f69966e2ac33e3c7b0a5dd7c14c"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/jayke/spritesheet.webp",
+    "copy": "web/assets/jayke/spritesheet.webp",
+    "sha256": "92e318b8bc0410c2aa7a3d73a2891d15935091e6a22e90fa3e5ece7e60d0a013"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/ochre/pet.json",
+    "copy": "web/assets/ochre/pet.json",
+    "sha256": "71ec8386ccb290770999fefdb8fe3286f478f6e8bac2fb606fdb5cfeb45ecff8"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/ochre/record.json",
+    "copy": "web/assets/ochre/record.json",
+    "sha256": "e180f125de2467e9bbf58c9420c39dcc7ffb3758c7a4662de15999bfc89aac4d"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/ochre/spritesheet.webp",
+    "copy": "web/assets/ochre/spritesheet.webp",
+    "sha256": "11c259d5b3b746729ec36a80d00d6f10713d9aa42cc6d510ef35a8700144cb88"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/buer/pet.json",
+    "copy": "web/assets/buer/pet.json",
+    "sha256": "fb6b7271d8d68321d69771b3191077b23f90e642302e04c8b227217b82a7d536"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/buer/record.json",
+    "copy": "web/assets/buer/record.json",
+    "sha256": "e3504ef68fe453a97288e8ac251cbe0654f973a48bc8e95e1b0c2ad0549023c0"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/buer/spritesheet.webp",
+    "copy": "web/assets/buer/spritesheet.webp",
+    "sha256": "b9e8d39f2d2f54207ea7c7f75bee96dfd7dab8d27da23a268dd3e9e4ae26b831"
+  }
+]

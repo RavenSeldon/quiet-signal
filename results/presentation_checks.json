@@ -1,0 +1,25 @@
+{
+  "release": "presentation 0.2 / scientific model 0.1",
+  "method": "In-app browser via CUA, plus filesystem integrity checks and existing reference suites",
+  "companions": 10,
+  "companion_result_invariance": "PASS for all ten selected companions",
+  "theme_result_invariance": "PASS",
+  "ochre_and_buer": "Both selected and rendered",
+  "keyboard_card_selection": "Buer verified",
+  "persistence": "Buer survived reload",
+  "mobile_document_widths": {
+    "390": 390,
+    "320": 320
+  },
+  "motion_pause": "Verified, including root scrolling",
+  "complementarity": "Buer silence under myopic, two routed signals under exact optimal",
+  "console_errors_observed": [],
+  "scientific_baseline": "Byte-identical to docs/presentation_baseline.json",
+  "screenshots": [
+    "canon-desktop.jpg",
+    "canon-light.jpg",
+    "canon-mobile.jpg",
+    "canon-companions.jpg"
+  ],
+  "limits": "No new human comprehension study or complete assistive-technology audit; standalone browser script extended but current-turn UI checks used CUA."
+}

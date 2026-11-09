@@ -1,0 +1,1094 @@
+[
+  {
+    "world": "distraction",
+    "policy": "none",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 1,
+    "trace": [],
+    "utility": 8.0,
+    "net": 8.0
+  },
+  {
+    "world": "distraction",
+    "policy": "random",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "distraction",
+    "policy": "information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 1,
+        "action_after": 1
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "distraction",
+    "policy": "severity",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "distraction",
+    "policy": "myopic",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "distraction",
+    "policy": "optimal",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "distraction",
+    "policy": "task_information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "distraction",
+    "policy": "full",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 1,
+        "action_after": 1
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 8.0
+  },
+  {
+    "world": "complementarity",
+    "policy": "none",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "complementarity",
+    "policy": "random",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "complementarity",
+    "policy": "information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      -1,
+      0
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "complementarity",
+    "policy": "severity",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 2,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 2
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "complementarity",
+    "policy": "myopic",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "complementarity",
+    "policy": "optimal",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 2,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 2
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "complementarity",
+    "policy": "task_information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "complementarity",
+    "policy": "full",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      0
+    ],
+    "action": 2,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 2
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 2,
+        "action_after": 2
+      }
+    ],
+    "utility": 8.0,
+    "net": 8.0
+  },
+  {
+    "world": "alignment",
+    "policy": "none",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "alignment",
+    "policy": "random",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 2
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 2,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "alignment",
+    "policy": "information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "alignment",
+    "policy": "severity",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "alignment",
+    "policy": "myopic",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      -1,
+      -1
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.75
+  },
+  {
+    "world": "alignment",
+    "policy": "optimal",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      -1,
+      -1
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.75
+  },
+  {
+    "world": "alignment",
+    "policy": "task_information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 7.5
+  },
+  {
+    "world": "alignment",
+    "policy": "full",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      0
+    ],
+    "action": 1,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 1
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 1,
+        "action_after": 1
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 1,
+        "action_after": 1
+      }
+    ],
+    "utility": 8.0,
+    "net": 8.0
+  },
+  {
+    "world": "disconnected",
+    "policy": "none",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "disconnected",
+    "policy": "random",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      1,
+      0
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "disconnected",
+    "policy": "information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "disconnected",
+    "policy": "severity",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "disconnected",
+    "policy": "myopic",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "disconnected",
+    "policy": "optimal",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      -1,
+      -1,
+      -1
+    ],
+    "action": 0,
+    "trace": [],
+    "utility": 2.0,
+    "net": 2.0
+  },
+  {
+    "world": "disconnected",
+    "policy": "task_information",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      -1
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 1.5
+  },
+  {
+    "world": "disconnected",
+    "policy": "full",
+    "state": [
+      0,
+      1,
+      0
+    ],
+    "signals": [
+      0,
+      1,
+      0
+    ],
+    "budget": 2,
+    "history": [
+      0,
+      1,
+      0
+    ],
+    "action": 0,
+    "trace": [
+      {
+        "sensor": 0,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 1,
+        "signal": 1,
+        "action_before": 0,
+        "action_after": 0
+      },
+      {
+        "sensor": 2,
+        "signal": 0,
+        "action_before": 0,
+        "action_after": 0
+      }
+    ],
+    "utility": 2.0,
+    "net": 2.0
+  }
+]

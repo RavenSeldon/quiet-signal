@@ -1,0 +1,78 @@
+[
+  {
+    "path": "~/Root/Sidus/source/04_E0_Protocol.md",
+    "sha256": "f0aa324ab252102df2a3690781de3022dfab6b635f5a19787978953825043f67"
+  },
+  {
+    "path": "~/Root/Sidus/E0A_HANDOVER.md",
+    "sha256": "495202ac465e102d961156d236fd50930092377d57c1096ca91a47ee45fba1cc"
+  },
+  {
+    "path": "~/Root/Sidus/assets/results/e0a-summary.json",
+    "sha256": "78ed1f07b77195384c8652fc27b50b1ab78c0aa0b378d07b22e125d6037ddeb6"
+  },
+  {
+    "path": "~/Root/Sidus/assets/results/e0a-controls.json",
+    "sha256": "babff3e580568f2450acfed9aa8fe313d1a4b5bfa5c0ee15c17499dd4ad4f87f"
+  },
+  {
+    "path": "~/Root/Sidus/assets/results/e0b/evidence/E0B_Frozen_Confirmation_Spec.md",
+    "sha256": "dc3d27753b499bdc4fe1b9ae393fb3362ac3cf9cc05d175f30f76ff6bf699e3a"
+  },
+  {
+    "path": "~/Root/Sidus/assets/results/e0b/evidence/E0B_Final_State_Report.md",
+    "sha256": "81e8cfe0694536f99bda7b64c7c5806d3a933182c726b7c2591d7dd4f45f488e"
+  },
+  {
+    "path": "~/Root/Sidus/assets/results/e0b/evidence/e0b_pilot.py",
+    "sha256": "5acbf25ce3ee5064778f78f605d67e7aec0c06b0eafacd582a5b4a2d5acddab9"
+  },
+  {
+    "path": "~/Root/Sidus/downloads/e1/evidence/PROTOCOL_RC4.md",
+    "sha256": "a6895e0179b028419099d7a1faa5d5e9897a02346467d7fc34e7c88e4dcbef29"
+  },
+  {
+    "path": "~/Root/Sidus/downloads/Sidus_E1_RC4_Canonical_Claim_Freeze.md",
+    "sha256": "b1557ed08c5130905d74ede83552dcba38079d8e244da9163dfb59c7c5b6899c"
+  },
+  {
+    "path": "~/Root/Hatchery/README.md",
+    "sha256": "446cb365b3d36104f1df5b3fba2c76ca7cadbf27db03255fc7a8da073d996f95"
+  },
+  {
+    "path": "~/Root/Hatchery/site/README.md",
+    "sha256": "80b46bdf36bec1d5952d8435b472b3de11cbaf738f0ee307de7447e4c54d6a35"
+  },
+  {
+    "path": "~/Root/Hatchery/bdp/The_Hatchery_BDP_v1.3.md",
+    "sha256": "8b50fd5ba555816986dc4a34c9a05ed275c796980fbc31c19b1fa67c76e34b2b"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/piko/pet.json",
+    "sha256": "7faa8d349ac94ca6e87f6ab6824a5b35b1d7322bda5d33b8b26bb6f352f836fe"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/piko/record.json",
+    "sha256": "7f60ce8171363868c00c306348890a8588ab9c027fe1c61803c2cba1bd07c100"
+  },
+  {
+    "path": "~/Root/Hatchery/pets/piko/spritesheet.webp",
+    "sha256": "b5de5ecc0705f48511d1e65d16f0c9252c09636bd8131dc6cf45f1e72f4d6a8c"
+  },
+  {
+    "path": "~/Root/portfolio/portfolio/styles.css",
+    "sha256": "88157b82ed75e7f28ecf923be66c29392ae08941edcbf2454229007e605d0107"
+  },
+  {
+    "path": "~/Root/portfolio/portfolio/index.html",
+    "sha256": "18339149a8a5a8075f633d2bb894860e17eb6d2524f8640e639129d69e724fb4"
+  },
+  {
+    "path": "~/Root/Hatchery/site/static/style.css",
+    "sha256": "4929459344c987b17e96924ba65fa453d50072ec53d205c32d13f1652702eec8"
+  },
+  {
+    "path": "~/Root/Hatchery/site/site.json",
+    "sha256": "c06a86df910e3f817b5ec55972f8638bb333176f2f8874bc08c0092bab0bbc02"
+  }
+]

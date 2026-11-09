@@ -1,0 +1,11 @@
+{
+  "web/app.js": "59f94975b6d6eebac21bf26581fb59418e41ed94184b4b186a3e9a828bc55fa0",
+  "web/runtime.js": "0d516bd234393c103a73efe9cb177f9b4a98cd298a37fa2c43cf64ae021373cf",
+  "web/data.js": "04ad500538489737197cd85a912fae621db4cd74d472d71775b39f782efb39e6",
+  "web/companions.js": "79b29b03844f97772e7cde724ca0d9c7c07b3cba492e0ca49d6258d0c11fefd7",
+  "web/pets.js": "c6b40762d157612637ab8df4b09ad6d68f78ae4cf2a0124e93576693ef6599a2",
+  "quiet_signal/engine.py": "99527c93eedaa7a0165d83f4870c5f76858fc0da4909840b339cbdb2850873b6",
+  "results/benchmark.csv": "e304d539f90971a648ff2ebddf9156639fbf4044ebaea3471efd720199ad6e78",
+  "results/sensitivity.csv": "777e9050c80de4428ad02b87891b741180aef8438c084757cf0572b88bbd6f28",
+  "results/primary_figure.png": "e74b44aecffacec12789c7dda0997a3356964091195520ed9133d1bc95222070"
+}

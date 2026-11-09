@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "release": "0.2.0",
+  "scope": "Clean extraction with local interpreter and Node; no inherited source files required",
+  "checks": [
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_budgets_costs_dominance_and_full_reference (test_engine.EngineTests.test_budgets_costs_dominance_and_full_reference) ... ok\ntest_complementarity_counterexample (test_engine.EngineTests.test_complementarity_counterexample) ... ok\ntest_distribution_and_bayes (test_engine.EngineTests.test_distribution_and_bayes) ... ok\ntest_hand_derived_alignment (test_engine.EngineTests.test_hand_derived_alignment) ... ok\ntest_informative_unused_routing_intervention (test_engine.EngineTests.test_informative_unused_routing_intervention) ... ok\ntest_invalid_inputs (test_engine.EngineTests.test_invalid_inputs) ... ok\ntest_mixed_target_accounting (test_engine.EngineTests.test_mixed_target_accounting) ... ok\ntest_rational_exhaustive_policy_trees (test_engine.EngineTests.test_rational_exhaustive_policy_trees) ... ok\ntest_replay_matches_exact_evaluation (test_engine.EngineTests.test_replay_matches_exact_evaluation) ... ok\ntest_silence_when_uninformative_or_expensive (test_engine.EngineTests.test_silence_when_uninformative_or_expensive) ... ok\ntest_asset_identities (test_record.RecordTests.test_asset_identities) ... ok\ntest_experiment_identities (test_record.RecordTests.test_experiment_identities) ... ok\ntest_report_table_matches_engine (test_record.RecordTests.test_report_table_matches_engine) ... ok\ntest_sensitivity_tallies (test_record.RecordTests.test_sensitivity_tallies) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.256s\n\nOK\n"
+    },
+    {
+      "command": [
+        "scripts/check_export.cjs"
+      ],
+      "exit_code": 0,
+      "output": "640 Python/browser expectation comparisons; 35840 deterministic traces passed, plus manual budgets and seeded replay.\n"
+    }
+  ]
+}

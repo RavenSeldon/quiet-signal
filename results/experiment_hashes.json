@@ -1,0 +1,9 @@
+{
+  "quiet_signal/engine.py": "99527c93eedaa7a0165d83f4870c5f76858fc0da4909840b339cbdb2850873b6",
+  "quiet_signal/benchmark.py": "4b1e167d916837041bedcd12e8490ee8f480ad7682fd22d9856dd8b7ac9a90f8",
+  "docs/SPECIFICATION.md": "f6e776b3726f6449d1c190ba6b257d79ac9a7277b45f67a60291a1a65d0786cb",
+  "results/benchmark.csv": "e304d539f90971a648ff2ebddf9156639fbf4044ebaea3471efd720199ad6e78",
+  "results/sensitivity.csv": "777e9050c80de4428ad02b87891b741180aef8438c084757cf0572b88bbd6f28",
+  "results/example_episodes.json": "2881f29ff78adb6061f4d01ff4bf4e5fae692920f60353b1e47d4b3fb059d6c6",
+  "web/data.js": "04ad500538489737197cd85a912fae621db4cd74d472d71775b39f782efb39e6"
+}

@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "scope": "Same isolated environment exact repeat; not external replication",
+  "identical_outputs": {
+    "results/benchmark.csv": "e304d539f90971a648ff2ebddf9156639fbf4044ebaea3471efd720199ad6e78",
+    "results/sensitivity.csv": "777e9050c80de4428ad02b87891b741180aef8438c084757cf0572b88bbd6f28",
+    "results/example_episodes.json": "2881f29ff78adb6061f4d01ff4bf4e5fae692920f60353b1e47d4b3fb059d6c6",
+    "web/data.js": "04ad500538489737197cd85a912fae621db4cd74d472d71775b39f782efb39e6",
+    "results/primary_figure.png": "e74b44aecffacec12789c7dda0997a3356964091195520ed9133d1bc95222070",
+    "results/primary_figure.svg": "1ff67972e9cdb44d434e3d3bbdf726f45f50a375ac3620481bd4ea20bdbf6932",
+    "results/budget_figure.png": "1e46f8ff9e3c6b245fa4af373df62e61646a4a25d2245db5af44fa0f7fff6bd4"
+  }
+}

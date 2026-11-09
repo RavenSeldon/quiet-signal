@@ -1,0 +1,154 @@
+{
+  "record_format": "hatchery-record/0",
+  "id": "piko",
+  "displayName": "Piko",
+  "description": "A playful young orca who swims through every problem with curiosity.",
+  "measured": {
+    "date": "2026-10-22",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "b5de5ecc0705f48511d1e65d16f0c9252c09636bd8131dc6cf45f1e72f4d6a8c",
+      "rgba_v1_sha256": "c76edc6d4cc7ad0efe71015c4c5ee897e98c74a1d861e1eae5e0590ce93168f4",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "7faa8d349ac94ca6e87f6ab6824a5b35b1d7322bda5d33b8b26bb6f352f836fe"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Manifest",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "pet.json complete",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Format",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "1536 × 2288, webp, alpha; 9 states + 2 extra rows",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Frames",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "no clipping, no chroma residue, no outliers, no loose bits",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Registration",
+        "tool": "hatchery check 0.1.0",
+        "result": "pass",
+        "summary": "centre line at y 102 ± 6",
+        "date": "2026-10-22"
+      },
+      {
+        "name": "Scale",
+        "tool": "hatchery check 0.1.0",
+        "result": "not configured",
+        "summary": "no fiducial set; add one to hatchery.json to measure scale (SPEC.md)",
+        "date": "2026-10-22"
+      }
+    ],
+    "verdict": "sound"
+  },
+  "human": {
+    "designer": "Ben Amuwo",
+    "original_design": "Mockups made partly by hand and partly with GPT. Ben starts from a general anatomical silhouette. Piko is an original character.",
+    "ai_assisted_production": {
+      "model": "GPT 5.6 Sol, in ChatGPT",
+      "seed_prompt_version": "Several versions over its development; the most recent work used v3.3",
+      "method": "From the silhouette, GPT 5.6 Sol builds the model, rigs it and builds out the animations, guided by the Hatchery seed prompt"
+    },
+    "manual_refinement": [
+      "None"
+    ],
+    "rights": {
+      "basis": "Piko is an original character created by the designer.",
+      "licence": "Piko can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Sound: passed the hatchery manifest, format, frame and registration checks (hatchery 0.1.0), 22 October 2026.",
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": null,
+      "status": "not submitted",
+      "submitted": null
+    }
+  }
+}

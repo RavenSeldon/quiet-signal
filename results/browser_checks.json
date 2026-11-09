@@ -1,0 +1,23 @@
+{
+  "engine": "Chromium",
+  "checks": [
+    "initial render",
+    "8 policies",
+    "same-world deterministic replay",
+    "myopic complementarity silence",
+    "optimal paired signals",
+    "disconnected gate",
+    "expensive silence",
+    "manual budget",
+    "zero budget",
+    "random full budget",
+    "new-world reset",
+    "320/390/768/1440 no horizontal overflow",
+    "reduced motion",
+    "keyboard range",
+    "research note",
+    "no page errors",
+    "no external requests"
+  ],
+  "errors": []
+}

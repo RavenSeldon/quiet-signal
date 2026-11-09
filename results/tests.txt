@@ -1,0 +1,19 @@
+test_budgets_costs_dominance_and_full_reference (test_engine.EngineTests.test_budgets_costs_dominance_and_full_reference) ... ok
+test_complementarity_counterexample (test_engine.EngineTests.test_complementarity_counterexample) ... ok
+test_distribution_and_bayes (test_engine.EngineTests.test_distribution_and_bayes) ... ok
+test_hand_derived_alignment (test_engine.EngineTests.test_hand_derived_alignment) ... ok
+test_informative_unused_routing_intervention (test_engine.EngineTests.test_informative_unused_routing_intervention) ... ok
+test_invalid_inputs (test_engine.EngineTests.test_invalid_inputs) ... ok
+test_mixed_target_accounting (test_engine.EngineTests.test_mixed_target_accounting) ... ok
+test_rational_exhaustive_policy_trees (test_engine.EngineTests.test_rational_exhaustive_policy_trees) ... ok
+test_replay_matches_exact_evaluation (test_engine.EngineTests.test_replay_matches_exact_evaluation) ... ok
+test_silence_when_uninformative_or_expensive (test_engine.EngineTests.test_silence_when_uninformative_or_expensive) ... ok
+test_asset_identities (test_record.RecordTests.test_asset_identities) ... ok
+test_experiment_identities (test_record.RecordTests.test_experiment_identities) ... ok
+test_report_table_matches_engine (test_record.RecordTests.test_report_table_matches_engine) ... ok
+test_sensitivity_tallies (test_record.RecordTests.test_sensitivity_tallies) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.266s
+
+OK

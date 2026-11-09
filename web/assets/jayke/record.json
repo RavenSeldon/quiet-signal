@@ -1,0 +1,167 @@
+{
+  "record_format": "hatchery-record/1",
+  "id": "jayke",
+  "displayName": "Jayke",
+  "description": "A joyful cosmic spotted eagle ray who follows the star currents. Volume IV · Pet 001.",
+  "measured": {
+    "date": "2026-11-03",
+    "scope": "Mechanical checks only: manifest, format, frames, registration, pairing and scale. The verdict is not a visual or artistic approval; that is the designer's sign-off, under human. The hashes show whether files match this Record; they do not, by themselves, establish authorship or rights.",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "92e318b8bc0410c2aa7a3d73a2891d15935091e6a22e90fa3e5ece7e60d0a013",
+      "rgba_v1_sha256": "d67bb481f5fae4ebd2aa19940328fac7d38a5d2b7c58bc7218bad35a7f04971d",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "ecfc568dff736a715312ef19607a398172c23e59acde771e3641c91c318739c9"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Manifest",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "pet.json complete",
+        "date": "2026-11-03"
+      },
+      {
+        "name": "Format",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "1536 × 2288, webp, alpha; 9 states + 2 extra rows",
+        "date": "2026-11-03"
+      },
+      {
+        "name": "Frames",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "6 thing(s) to look at; loose bits can be intended (sparkles, tentacles)",
+        "date": "2026-11-03"
+      },
+      {
+        "name": "Registration",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "centre line at y 102 ± 6; accepted as drawn: failed, review",
+        "date": "2026-11-03"
+      },
+      {
+        "name": "Pairing",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "running-right and running-left match in size (±10%) and mirror each other",
+        "date": "2026-11-03"
+      },
+      {
+        "name": "Scale",
+        "tool": "hatchery check 0.3.0",
+        "result": "not configured",
+        "summary": "no fiducial set; add one to hatchery.json to measure scale (SPEC.md)",
+        "date": "2026-11-03"
+      }
+    ],
+    "mechanical_verdict": "fair"
+  },
+  "human": {
+    "designer": "Ben M",
+    "original_design": "Jayke, a joyful cosmic spotted eagle ray, is an original character designed by Ben M.",
+    "ai_assisted_production": {
+      "model": "The Cosmic Cradle",
+      "seed_prompt_version": "Not recorded",
+      "method": "Produced with AI assistance in The Cosmic Cradle"
+    },
+    "manual_refinement": [
+      "2026-11-02: running-left replaced by the mirror image of running-right, so Jayke keeps one view whichever way he swims; nothing redrawn (workbench/2026-11-02_jayke/repair_jayke.py)"
+    ],
+    "rights": {
+      "basis": "Jayke is an original character created by the designer.",
+      "licence": "Jayke can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Fair: passed the hatchery manifest, format and pairing checks as a swimmer on a centre line; the curl in failed and the swirl in review leave it, accepted as drawn (hatchery 0.3.0), 2 November 2026.",
+    "visual_signoff": {
+      "by": "Ben Amuwo",
+      "date": "2026-11-02",
+      "note": "approved the sheet for release, with running-left mirrored from running-right"
+    },
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": null,
+      "status": "not submitted",
+      "submitted": null
+    }
+  }
+}

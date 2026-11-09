@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="description" content="A small, exact experiment in what deserves our attention.">
+<title>The Quiet Signal — a playable experiment</title>
+<link rel="icon" href="assets/signal-mark.svg"><meta name="theme-color" content="#030304">
+<script src="appearance.js"></script><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="identity.css"><script defer src="data.js"></script><script defer src="runtime.js"></script><script defer src="pets.js"></script><script defer src="companions.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#experiment">Skip to experiment</a>
+<header class="masthead"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>THE QUIET SIGNAL</span></a><nav aria-label="Main"><a href="#companions">The companions</a><a href="#record">The evidence</a><a href="research.html">Research note ↗</a><button id="theme" class="theme-toggle" aria-label="Switch to light mode">☼ Light</button><button id="motion" class="text-button" aria-pressed="false">Pause motion</button></nav></header>
+<main>
+<section class="intro" aria-labelledby="signal-title">
+  <div class="hero-topline"><p class="eyebrow">AN EXPERIMENT IN ATTENTION</p><span>FINITE WORLD / OPEN QUESTION</span></div>
+  <div class="hero-copy"><h1 id="signal-title"><span class="title-the">The</span><span class="title-quiet">Quiet</span><span class="title-signal">Signal<span class="title-dot">.</span></span></h1>
+  <p class="hero-statement">Not every signal<br>needs a voice.</p></div>
+  <figure class="signal-object"><div class="object-index"><span>QS — 001</span><span>LISTEN / WITH INTENT</span></div>
+  <svg viewBox="0 0 460 440" aria-hidden="true" focusable="false">
+    <defs><pattern id="signal-hatch" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 7L7 0" stroke="currentColor" stroke-width="1"/></pattern></defs>
+    <g class="object-frame" fill="none"><path d="M12 46V12H46 M414 12H448V46 M12 394V428H46 M414 428H448V394"/><path d="M18 220H442 M230 18V422" stroke-dasharray="2 8"/></g>
+    <g class="signal-ribbons" fill="none" stroke-width="30" stroke-linecap="square">
+      <path class="ribbon-coral" d="M73 77V152L145 187V249L73 285V363"/>
+      <path class="ribbon-violet" d="M230 77V134L177 166V274L230 306V363"/>
+      <path class="ribbon-lime" d="M387 77V152L315 187V249L387 285V363"/>
+    </g>
+    <path d="M267 63H285V377H267Z" class="hatched-signal" fill="url(#signal-hatch)"/>
+    <rect x="0" y="206" width="460" height="28" class="silence-cut"/>
+    <path d="M19 220H194L205 204L218 236L231 196L246 220H441" class="quiet-pulse" fill="none" stroke-width="2"/>
+    <circle cx="441" cy="220" r="4" class="pulse-point"/>
+    <g class="object-labels"><text x="55" y="408">01</text><text x="220" y="408">02</text><text x="375" y="408">03</text></g>
+  </svg><figcaption><span>THREE CHANNELS.<br>ROOM FOR SILENCE.</span><span class="object-note">A visual metaphor.<br>The measurements are below.</span></figcaption></figure>
+  <div class="hero-bottom"><p class="lede">Three monitors. A little attention. One decision.<br>Discover when knowing more actually helps.</p><div class="hero-links"><a class="primary hero-button" href="#experiment">Enter the observatory <span aria-hidden="true">↘</span></a><a href="research.html" class="text-link">Read the research ↗</a></div></div>
+</section>
+<nav class="section-nav" aria-label="Experiment sections"><a href="#experiment"><span>01</span> The observatory</a><a href="#companions"><span>02</span> Your companions</a><a href="#record"><span>03</span> The evidence</a><a href="research.html"><span>↗</span> Findings & limits</a></nav>
+<section id="experiment" class="experiment" aria-labelledby="experiment-title">
+<div class="section-head"><div><p class="eyebrow">01 / THE OBSERVATORY</p><h2 id="experiment-title">Choose what deserves attention.</h2></div><span class="pill">CREATION · a model world</span></div>
+<div class="controls">
+<label>World<select id="world"><option value="distraction">01 / The bright distraction</option><option value="complementarity">02 / The missing half</option><option value="alignment">03 / A useful signal</option><option value="disconnected">04 / The closed gate</option></select></label>
+<label class="budget-label">Attention budget <output id="budget-value" for="budget">1 packet</output><input id="budget" type="range" min="0" max="3" step="1" value="1"><span class="range-labels"><span>Silence · 0</span><span>All three · 3</span></span></label>
+<label>Who chooses?<select id="policy"><option value="myopic">Myopic value</option><option value="optimal">Exact optimal</option><option value="manual">You choose</option><option value="information">World information</option><option value="task_information">Task information</option><option value="severity">Severity rule</option><option value="random">Random</option><option value="none">No monitoring</option></select></label>
+<label>Cost per interruption<select id="cost"><option value="0">0.00</option><option value="0.2" selected>0.20</option><option value="1">1.00</option><option value="3">3.00</option><option value="10">10.00</option></select><small>+ 0.05 to read each sensor</small></label>
+</div>
+<div class="world-brief"><p id="world-description"></p><p class="rules">One resource unit. Reserve it for <b>+2</b>, or send it on route 0 or 1: <b>+8</b> if correct, <b>−8</b> if wrong. Your chosen signals guide a Bayes-optimal route decision.</p></div>
+<div class="observatory">
+<div class="companion"><label class="companion-select-label" for="companion-select">BESIDE YOU <select id="companion-select" aria-label="Companion"></select></label><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="star s1"></span><span class="star s2"></span><span class="star s3"></span><span class="star s4"></span><div id="pet" role="img" aria-label="Piko, a young orca from The Hatchery, waiting beside the signals"></div><div class="pet-caption"><span id="pet-name">PIKO / THE HATCHERY</span><p id="silence">Listening begins with a choice.</p><small id="pet-status">Quiet is an available action.</small></div></div>
+<div class="signal-area"><div class="instrument-header"><span>MONITOR CHANNELS</span><span id="episode-label">WORLD 42 · UNREVEALED</span></div><div id="signals"></div><div class="run-actions"><button id="run" class="primary">Listen & decide <span aria-hidden="true">→</span></button><button id="next" class="secondary">New world</button><span id="selection-note">The policy can stop before spending its budget.</span></div></div>
+</div>
+<details id="companions" class="companion-guide"><summary><span><b>02 /</b> A little company for the question.</span><span class="guide-count">10 HATCHERY COMPANIONS <span aria-hidden="true">+</span></span></summary><div class="guide-intro"><p>Choose who sits beside you. One companion at a time, with room for quiet.</p><a href="https://hatchery.world" target="_blank" rel="noopener">Visit the field guide ↗</a></div><div id="companion-gallery" class="companion-gallery" role="group" aria-label="Choose a Hatchery companion"></div><div class="companion-record"><div><span id="companion-plate" class="eyebrow"></span><p id="companion-description"></p></div><div class="record-links"><a id="companion-record" href="assets/piko/record.json" target="_blank" rel="noopener">Original Record ↗</a><a id="companion-home" href="https://hatchery.world/piko/index.html" target="_blank" rel="noopener">Meet this companion ↗</a></div></div><p class="guide-note">Companions change the company, never the policy or the result. Original artwork and Records, preserved unchanged.</p></details><span id="companion-announcement" class="sr-only" role="status" aria-live="polite"></span>
+<div id="outcome" class="outcome" hidden aria-live="polite"></div>
+<div class="lesson"><span class="eyebrow">TRY THIS</span><p id="lesson"></p></div>
+</section>
+<section id="record" class="evidence" aria-labelledby="evidence-title"><div class="section-head"><div><p class="eyebrow">03 / EVIDENCE · EXACT EXPECTATIONS</p><h2 id="evidence-title">A lucky outcome is not a good policy.</h2></div><p>Every possible world and sensor outcome.<br>No sampled estimates. No invented results.</p></div><div class="evidence-layout"><div class="chart-panel"><h3>Value as attention becomes available</h3><p class="muted">Expected utility after observation and interruption costs</p><div id="chart"></div><div id="legend" class="legend"></div><p class="chart-note">The free-full reference receives all three noisy signals at no cost. It is an unconstrained upper reference, not a peer.</p></div><div class="table-panel"><h3 id="table-title">At this budget</h3><div class="table-scroll"><table><thead><tr><th scope="col">Policy</th><th scope="col">Net value</th><th scope="col">Packets</th><th scope="col">Bits¹</th><th scope="col">Failure²</th></tr></thead><tbody id="results-body"></tbody></table></div><p class="chart-note">¹ Information about the full hidden state. ² Wrong-route probability; reserve could prevent it. All peers share the same budget and cost rules.</p></div></div><details><summary>Alternate timelines · same world, different choices</summary><p class="muted">Run an episode to reveal these modeled counterfactuals. The hidden state and all sensor noise stay fixed. These are program interventions, not empirical causal estimates.</p><div class="table-scroll"><table><thead><tr><th>Policy</th><th>Read signals</th><th>Action</th><th>Gross</th><th>Cost</th><th>Net</th></tr></thead><tbody id="timeline-body"></tbody></table></div></details></section>
+<section class="closing"><p class="eyebrow">QUESTION · WHAT SURVIVES?</p><h2>Sometimes the quiet choice is wise.<br>Sometimes it misses everything.</h2><p>A greedy value policy can ignore two signals that only help together. A simple rule can match an exact solver. Information can reach a system and change nothing. This little world permits all three.</p><a href="research.html" class="research-link">Read the findings, failures & limits <span>↗</span></a></section>
+</main>
+<footer><p>THE QUIET SIGNAL <span>·</span> <a href="https://benamuwo.com">Ben Amuwo</a> <span>·</span> <a href="https://benamuwo.me/">Neurascape</a> <span>·</span> November 8, 2026</p><p><a href="https://sidus.quest">Sīdus</a> × <a href="https://hatchery.world">The Hatchery</a> × 無為 × 如實</p><small>A separate synthetic experiment. No claim about consciousness or human attention.<br>Ten companions from <a href="https://hatchery.world">The Hatchery</a>, with original artwork and Records. Pet use only; no commercial replication or resale.</small></footer>
+</body></html>

@@ -1,0 +1,168 @@
+{
+  "record_format": "hatchery-record/1",
+  "id": "buer",
+  "displayName": "Buer | The Fifth Step | The Eternal Wheel",
+  "description": "A five-legged lion-wheel herbalist who turns stumbling into flourishing.",
+  "measured": {
+    "date": "2026-11-02",
+    "scope": "Mechanical checks only: manifest, format, frames, registration, pairing and scale. The verdict is not a visual or artistic approval; that is the designer's sign-off, under human. The hashes show whether files match this Record; they do not, by themselves, establish authorship or rights.",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "b9e8d39f2d2f54207ea7c7f75bee96dfd7dab8d27da23a268dd3e9e4ae26b831",
+      "rgba_v1_sha256": "03279ca28fdb7440819defd413d7dc215a1218e4e641572b74accebd497bbe7c",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "fb6b7271d8d68321d69771b3191077b23f90e642302e04c8b227217b82a7d536"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Manifest",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "pet.json complete",
+        "date": "2026-11-02"
+      },
+      {
+        "name": "Format",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "1536 × 2288, webp, alpha; 9 states + 2 extra rows",
+        "date": "2026-11-02"
+      },
+      {
+        "name": "Frames",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "6 thing(s) to look at; loose bits can be intended (sparkles, tentacles)",
+        "date": "2026-11-02"
+      },
+      {
+        "name": "Registration",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "contact line at y 169 ± 4",
+        "date": "2026-11-02"
+      },
+      {
+        "name": "Pairing",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "running-right and running-left match in size (±10%) and mirror each other; 2 thing(s) for manual review",
+        "date": "2026-11-02"
+      },
+      {
+        "name": "Scale",
+        "tool": "hatchery check 0.3.0",
+        "result": "not configured",
+        "summary": "no fiducial set; add one to hatchery.json to measure scale (SPEC.md)",
+        "date": "2026-11-02"
+      }
+    ],
+    "mechanical_verdict": "fair"
+  },
+  "human": {
+    "designer": "Lucifer",
+    "original_design": "Buer, a five-legged lion-wheel herbalist, is an original character authored by Lucifer.",
+    "ai_assisted_production": {
+      "model": "The Crucible",
+      "seed_prompt_version": "Not recorded",
+      "method": "Produced with AI assistance in The Crucible"
+    },
+    "manual_refinement": [
+      "2026-11-02: grounded frames shifted vertically, each as a rigid whole, so the lowest hoof sits on the contact line and the wheel rolls on the ground; nothing redrawn (workbench/2026-11-02_buer/repair_buer.py)",
+      "2026-11-02: displayName set to \"Buer | The Fifth Step | The Eternal Wheel\" at Ben's request"
+    ],
+    "rights": {
+      "basis": "Buer is an original character created by the designer.",
+      "licence": "Buer can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Fair: passed the hatchery manifest, format, registration and pairing checks (hatchery 0.3.0), 2 November 2026. Pairing asks for a look at facing because a five-legged wheel looks much the same either way round; checked by eye: the wheel turns clockwise going right and anticlockwise going left.",
+    "visual_signoff": {
+      "by": "Ben Amuwo",
+      "date": "2026-11-02",
+      "note": "approved the sheet for release, with the grounding repair; review's flower vanishing at the loop accepted as drawn"
+    },
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": null,
+      "status": "not submitted",
+      "submitted": null
+    }
+  }
+}

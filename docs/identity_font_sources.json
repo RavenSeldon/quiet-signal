@@ -1,0 +1,32 @@
+[
+  {
+    "source": "~/Root/Hatchery/site/static/fonts/ibm-plex-sans-latin-400-normal.woff2",
+    "path": "web/assets/fonts/ibm-plex-sans-latin-400-normal.woff2",
+    "sha256": "3b646991d30055a93a4ecc499713d4347953a74a947ecab435ab72070cbdab0e"
+  },
+  {
+    "source": "~/Root/Hatchery/site/static/fonts/ibm-plex-sans-latin-500-normal.woff2",
+    "path": "web/assets/fonts/ibm-plex-sans-latin-500-normal.woff2",
+    "sha256": "0717336fb31fcdcde4b8deb3675bb4a0f7f6d484864afcd6751ac29975962203"
+  },
+  {
+    "source": "~/Root/Hatchery/site/static/fonts/ibm-plex-mono-latin-400-normal.woff2",
+    "path": "web/assets/fonts/ibm-plex-mono-latin-400-normal.woff2",
+    "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+  },
+  {
+    "source": "~/Root/Hatchery/site/static/fonts/libre-baskerville-latin-400-italic.woff2",
+    "path": "web/assets/fonts/libre-baskerville-latin-400-italic.woff2",
+    "sha256": "efb7e5f4376a557314f5bb9f5197ef837d86c0ab38e1a50a0ff5c60c3400c629"
+  },
+  {
+    "source": "~/Root/Hatchery/site/static/fonts/LICENSE-IBMPlex.txt",
+    "path": "web/assets/fonts/LICENSE-IBMPlex.txt",
+    "sha256": "d0283623ef57e722fd0eb688a8041589670c608ab780cd3612d06ba6f153d3fd"
+  },
+  {
+    "source": "~/Root/Hatchery/site/static/fonts/LICENSE-LibreBaskerville.txt",
+    "path": "web/assets/fonts/LICENSE-LibreBaskerville.txt",
+    "sha256": "8490e863633e537100d6d18755d994ea30b0b44741876a17809d28becf45ce11"
+  }
+]

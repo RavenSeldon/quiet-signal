@@ -1,0 +1,167 @@
+{
+  "record_format": "hatchery-record/1",
+  "id": "hel",
+  "displayName": "Hel",
+  "description": "Volume III Pet 005. A small raven-winged Norse-inspired underworld guardian, keeper of the ember heart and shelter of dark feathers.",
+  "measured": {
+    "date": "2026-10-30",
+    "scope": "Mechanical checks only: manifest, format, frames, registration, pairing and scale. The verdict is not a visual or artistic approval; that is the designer's sign-off, under human. The hashes show whether files match this Record; they do not, by themselves, establish authorship or rights.",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "02dff3fb5e51a9bc807a4df8b9009889aae093e7a3e41a393aeebc4dfc8f202f",
+      "rgba_v1_sha256": "b2c584a17a5a3b1c8d1ae7e359322a830753bb6f732d7f42682b2d66bdd65de7",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "d0827cacaed59a6108ccafb8c6d7d0bd7e780cae838d590291249c3629d3857a"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Manifest",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "pet.json complete",
+        "date": "2026-10-30"
+      },
+      {
+        "name": "Format",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "1536 × 2288, webp, alpha; 9 states + 2 extra rows",
+        "date": "2026-10-30"
+      },
+      {
+        "name": "Frames",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "39 thing(s) to look at; loose bits can be intended (sparkles, tentacles)",
+        "date": "2026-10-30"
+      },
+      {
+        "name": "Registration",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "contact line at y 190 ± 4; accepted as drawn: failed",
+        "date": "2026-10-30"
+      },
+      {
+        "name": "Pairing",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "running-right and running-left match in size (±10%) and mirror each other",
+        "date": "2026-10-30"
+      },
+      {
+        "name": "Scale",
+        "tool": "hatchery check 0.3.0",
+        "result": "not configured",
+        "summary": "no fiducial set; add one to hatchery.json to measure scale (SPEC.md)",
+        "date": "2026-10-30"
+      }
+    ],
+    "mechanical_verdict": "fair"
+  },
+  "human": {
+    "designer": "Lucifer",
+    "original_design": "Hel, the raven-winged guardian of the underworld, is an original character authored by Lucifer.",
+    "ai_assisted_production": {
+      "model": "The Crucible",
+      "seed_prompt_version": "Not recorded",
+      "method": "Produced with AI assistance in The Crucible"
+    },
+    "manual_refinement": [
+      "2026-10-30: none needed; the third sheet and pet.json are released as received, after two regenerations in The Crucible (workbench/2026-10-30_hel)"
+    ],
+    "rights": {
+      "basis": "Hel is an original character created by the designer.",
+      "licence": "Hel can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Fair: passed the hatchery manifest, format and pairing checks; the tumble in failed leaves the ground, accepted as drawn (hatchery 0.3.0), 30 October 2026.",
+    "visual_signoff": {
+      "by": "Ben Amuwo",
+      "date": "2026-10-30",
+      "note": "approved the sheet for release"
+    },
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": null,
+      "status": "not submitted",
+      "submitted": null
+    }
+  }
+}

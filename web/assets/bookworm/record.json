@@ -1,0 +1,137 @@
+{
+  "record_format": "hatchery-record/0",
+  "id": "bookworm",
+  "displayName": "Bookworm",
+  "description": "A guileless green explorer who wriggles toward every good story.",
+  "measured": {
+    "date": "2026-10-20",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "2586fbfa40f97edf8995b7f08333469cfcc2a5b8680b2bd66319be3a9bff714c",
+      "rgba_v1_sha256": "5774c0e6820885647a2a0bb72a2ebc0bee034d1c0ab1c54cdca8199441287ee6",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "653d2d0dc93a0ff1b170d58267e4310c773cc71986af1c65401c202e2d1d8c32"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Format: OpenAI atlas validator, rows 0-8",
+        "tool": "openai/skills hatch-pet validate_atlas.py",
+        "result": "pass",
+        "errors": 0,
+        "warnings": 0,
+        "date": "2026-10-20"
+      },
+      {
+        "name": "Frames: clipping, chroma residue, size outliers, detached bits",
+        "tool": "qa/tools/analyze_sheet.py",
+        "result": "clean",
+        "max_edge_px": 0,
+        "max_chroma_px": 0,
+        "date": "2026-10-20"
+      }
+    ]
+  },
+  "human": {
+    "designer": "Ben Amuwo",
+    "original_design": "Mockups made partly by hand and partly with GPT. Ben starts from a general anatomical silhouette. Bookworm is the mascot of bookworm.guide.",
+    "ai_assisted_production": {
+      "model": "GPT 5.6 Sol, in ChatGPT",
+      "seed_prompt_version": "v1 (the Hatchery seed prompt is now at v3.4)",
+      "method": "From the silhouette, GPT 5.6 Sol builds the model, rigs it and builds out the animations, guided by the Hatchery seed prompt"
+    },
+    "manual_refinement": [
+      "2026-10-19: review row frame 5 replaced with frame 0 (frame selection; deterministic; workbench/2026-10-19_repair)",
+      "2026-10-20: waving and jumping rows repaired by Ben, following the 19 October regeneration briefs",
+      "Bookworm has reached the standard set for release; no further repairs are planned"
+    ],
+    "rights": {
+      "basis": "Bookworm is the mascot of bookworm.guide, which belongs to the designer.",
+      "licence": "Bookworm can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Passed: OpenAI's atlas validator (rows 0–8) and the frame checks, 20 October 2026.",
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": "bookworm",
+      "status": "listed",
+      "submitted": "2026-10-22",
+      "listed": "2026-10-26"
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "record_format": "hatchery-record/1",
+  "id": "ochre",
+  "displayName": "Shai-Ochre",
+  "description": "A sun-warmed sand worm who peeks, burrows, naps in a curl, and always comes back up to see.",
+  "measured": {
+    "date": "2026-10-23",
+    "scope": "Mechanical checks only: manifest, format, frames, registration, pairing and scale. The verdict is not a visual or artistic approval; that is the designer's sign-off, under human. The hashes show whether files match this Record; they do not, by themselves, establish authorship or rights.",
+    "spritesheet": {
+      "path": "spritesheet.webp",
+      "file_sha256": "11c259d5b3b746729ec36a80d00d6f10713d9aa42cc6d510ef35a8700144cb88",
+      "rgba_v1_sha256": "b76ff1847f536bbc87c784ac6bce0c0e07d990c03f4e80d700bdffdb9af08504",
+      "format": "WEBP",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "cell": [
+        192,
+        208
+      ],
+      "grid": [
+        8,
+        11
+      ],
+      "spriteVersionNumber": 2
+    },
+    "pet_json": {
+      "file_sha256": "71ec8386ccb290770999fefdb8fe3286f478f6e8bac2fb606fdb5cfeb45ecff8"
+    },
+    "states": [
+      {
+        "row": 0,
+        "state": "idle",
+        "frames": 6
+      },
+      {
+        "row": 1,
+        "state": "running-right",
+        "frames": 8
+      },
+      {
+        "row": 2,
+        "state": "running-left",
+        "frames": 8
+      },
+      {
+        "row": 3,
+        "state": "waving",
+        "frames": 4
+      },
+      {
+        "row": 4,
+        "state": "jumping",
+        "frames": 5
+      },
+      {
+        "row": 5,
+        "state": "failed",
+        "frames": 8
+      },
+      {
+        "row": 6,
+        "state": "waiting",
+        "frames": 6
+      },
+      {
+        "row": 7,
+        "state": "running",
+        "frames": 6
+      },
+      {
+        "row": 8,
+        "state": "review",
+        "frames": 6
+      },
+      {
+        "row": 9,
+        "state": "row-9",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      },
+      {
+        "row": 10,
+        "state": "row-10",
+        "frames": 8,
+        "note": "v2 row; purpose not documented by OpenAI's published skill"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Manifest",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "pet.json complete",
+        "date": "2026-10-23"
+      },
+      {
+        "name": "Format",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "1536 × 2288, webp, alpha; 9 states + 2 extra rows",
+        "date": "2026-10-23"
+      },
+      {
+        "name": "Frames",
+        "tool": "hatchery check 0.3.0",
+        "result": "flag",
+        "summary": "73 thing(s) to look at; loose bits can be intended (sparkles, tentacles)",
+        "date": "2026-10-23"
+      },
+      {
+        "name": "Registration",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "contact line at y 195 ± 4",
+        "date": "2026-10-23"
+      },
+      {
+        "name": "Pairing",
+        "tool": "hatchery check 0.3.0",
+        "result": "pass",
+        "summary": "running-right and running-left match in size (±10%) and mirror each other",
+        "date": "2026-10-23"
+      },
+      {
+        "name": "Scale",
+        "tool": "hatchery check 0.3.0",
+        "result": "not configured",
+        "summary": "no fiducial set; add one to hatchery.json to measure scale (SPEC.md)",
+        "date": "2026-10-23"
+      }
+    ],
+    "mechanical_verdict": "fair"
+  },
+  "human": {
+    "designer": "Ben Amuwo",
+    "original_design": "Shai-Ochre is an original character, designed for the Hatchery from its own character brief.",
+    "ai_assisted_production": {
+      "model": "GPT 5.6 Sol, in ChatGPT",
+      "seed_prompt_version": "v3.4",
+      "method": "From the silhouette, GPT 5.6 Sol builds the model, rigs it and builds out the animations, guided by the Hatchery seed prompt"
+    },
+    "manual_refinement": [
+      "2026-10-23: running-right and running-left swapped back; each faced the other's direction, so Shai-Ochre ran backwards",
+      "2026-10-23: five detached sand sprays that ended in a straight cropped edge removed from jumping frame 1 and rows 9-10",
+      "2026-10-23: the cropped sand edge in waving frames 2-3 faded to a rounded end; opacity only, nothing redrawn (workbench/2026-10-23_ochre)"
+    ],
+    "rights": {
+      "basis": "Shai-Ochre is an original character created by the designer.",
+      "licence": "Shai-Ochre can be used freely as a pet, including at work, but cannot be replicated or resold commercially in any way.",
+      "statement": "Designed by the named designer. Portions were produced with AI assistance, disclosed above. This Record makes no claim that AI-generated portions are protected by copyright."
+    },
+    "condition": "Fair: passed the hatchery manifest, format, registration and pairing checks, with drawn particles (sand grains, sleep marks, a sparkle) flagged for the eye (hatchery 0.3.0), 23 October 2026.",
+    "visual_signoff": {
+      "by": "Ben Amuwo",
+      "date": "2026-10-23",
+      "note": "approved the repaired sheet for release"
+    },
+    "release_version": "v1.0"
+  },
+  "travels": {
+    "codex": "format validated; install by copying the folder to ~/.codex/pets/",
+    "petdex": {
+      "slug": null,
+      "status": "not submitted",
+      "submitted": null
+    }
+  }
+}
