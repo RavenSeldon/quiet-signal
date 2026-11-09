@@ -10,10 +10,10 @@
 # Same pattern as The Seventh Seat's deploy/droplet_install.sh.
 set -euo pipefail
 
-TAG="site-2026-11-09-r2"
+TAG="site-2026-11-09-r3"
 ZIP_URL="https://github.com/RavenSeldon/quiet-signal/releases/download/$TAG/quiet-signal-$TAG.zip"
-ZIP_SHA="dc34ebcadb920f67a810b0663759c8f83125a43e2cf29dc0d811716c2293278f"
-RELEASE_SHA="c8d40e7e94313be2b7fa4fe1ab403cf81e1c6170601b411dcd3196facbe2ec60"
+ZIP_SHA="f05a60056804bbe92ad183b1f9f2137d6fe9b35982fa66efec4d0142bcfb931c"
+RELEASE_SHA="7fe716feb3b8bbd076c74eea11d4660782d285e3118f21b02000cc6df23c5f1b"
 BASE="${QUIET_SIGNAL_BASE:-/srv/quiet-signal}"
 SITE="${QUIET_SIGNAL_SITE:-https://benamuwo.me}"
 say() { printf '\n== %s\n' "$*"; }

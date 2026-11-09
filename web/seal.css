@@ -50,3 +50,13 @@ input[type=range]{accent-color:var(--mint)}
 
 @media(forced-colors:active){.experiment::before{background:CanvasText}.title-signal{color:CanvasText;background:none}}
 #signal-hatch path{stroke:var(--signal)}
+/* The seal in the navigation bar: Ben's Maitrism glyph, unchanged, beside the signal mark. */
+.masthead-brand{display:flex;align-items:center;gap:16px;min-width:0}
+.seal-nav{display:block;flex:none;width:34px;height:34px;border-radius:7px;overflow:hidden;background:#000;line-height:0}
+/* The file is shown unchanged; the frame is scaled so the figure, not its black field, fills the mark. */
+.seal-nav img{display:block;width:100%;height:100%;transform:scale(1.7)}
+.seal-nav:hover,.seal-nav:focus-visible{box-shadow:0 0 0 1px var(--seal-sky)}
+:root[data-theme=light] .seal-nav{box-shadow:0 0 0 1px var(--line)}
+.seal-home{overflow:hidden;border-radius:5px;background:#000;width:22px;height:22px}.seal-home img{transform:scale(1.7)}
+@media(max-width:760px){.masthead-brand{gap:10px}.seal-nav{width:30px;height:30px}}
+@media(max-width:450px){.masthead-brand{gap:8px}.seal-nav{width:26px;height:26px;border-radius:6px}}

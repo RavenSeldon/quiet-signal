@@ -1,6 +1,6 @@
 # Deploying The Quiet Signal → https://benamuwo.me/quiet-signal/
 
-**Status:** `site-2026-11-09` is live (installed 9 November 2026). The next release, **`site-2026-11-09-r2`** (presentation v0.4, Seal edition), is built and verified but not yet published.
+**Status:** `site-2026-11-09` and then `site-2026-11-09-r2` (Seal edition, with a thickened favicon derivative) were published on 9 November 2026. **`site-2026-11-09-r3`** uses Ben's seal unchanged as the favicon, site icon and navigation-bar mark. It is built and verified but not yet published.
 
 ## Updating to a New Release (Blog Already Done)
 
@@ -8,12 +8,12 @@ The blog blueprint is already on the droplet, so an update only touches the stat
 
 ```sh
 cd ~/Root/quiet-signal
-git add -A && git commit -m "Presentation 0.4: Maitrism seal favicon and palette, outcome placement, link previews"
+git add -A && git commit -m "Seal edition r3: the supplied seal as favicon, site icon and nav mark"
 git push
-python3 scripts/build_release.py        # must print zip sha256: dc34ebcadb920f67a810b0663759c8f83125a43e2cf29dc0d811716c2293278f
-gh release create site-2026-11-09-r2 dist/quiet-signal-site-2026-11-09-r2.zip \
-  --title "The Quiet Signal · site 2026-11-09 r2 (Seal edition)" \
-  --notes "Presentation 0.4 over scientific model 0.1. Verified by deploy/droplet_install.sh against RELEASE.json."
+python3 scripts/build_release.py        # must print zip sha256: f05a60056804bbe92ad183b1f9f2137d6fe9b35982fa66efec4d0142bcfb931c
+gh release create site-2026-11-09-r3 dist/quiet-signal-site-2026-11-09-r3.zip \
+  --title "The Quiet Signal · site 2026-11-09 r3 (Seal edition)" \
+  --notes "Presentation 0.4 over scientific model 0.1, with the Maitrism seal unchanged as favicon and nav mark. Verified by deploy/droplet_install.sh against RELEASE.json."
 ```
 
 Then, in the DigitalOcean console:
@@ -22,7 +22,7 @@ Then, in the DigitalOcean console:
 curl -fsSL https://raw.githubusercontent.com/RavenSeldon/quiet-signal/main/deploy/droplet_install.sh | SKIP_BLOG=1 bash
 ```
 
-The previous release stays on the droplet, and the installer switches back to it if a live check fails. A browser may show the old favicon until its cache refreshes, because favicons are cached separately from pages.
+The previous release stays on the droplet, and the installer switches back to it if a live check fails. A browser may show the old favicon until its cache refreshes, because favicons are cached separately from pages. Releases `site-2026-11-09` and `-r2` stay on GitHub unchanged.
 
 The sections below describe the first deployment and the serving rules. They still apply.
 

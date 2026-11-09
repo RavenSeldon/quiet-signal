@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 DIST = ROOT / "dist"
 OUT = DIST / "quiet-signal"
-TAG = "site-2026-11-09-r2"
+TAG = "site-2026-11-09-r3"
 ZIP = DIST / f"quiet-signal-{TAG}.zip"
 
 # Loaded by no current page; retained in web/ as release history only
