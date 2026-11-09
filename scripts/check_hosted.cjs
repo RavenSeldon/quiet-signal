@@ -30,6 +30,10 @@ if (!base || !base.endsWith('/quiet-signal/')) { console.error('usage: node scri
   assert(await page.evaluate(() => getComputedStyle(document.getElementById('pet')).backgroundImage.includes('spritesheet')), 'companion sprite not applied');
   assert(await page.evaluate(() => [...document.querySelectorAll('#legend i')].every(i => i.style.background !== '')), 'legend swatches lost colour');
 
+  for (const href of await page.evaluate(() => [...document.querySelectorAll('link[rel~=icon],link[rel=apple-touch-icon]')].map(l => l.href)))
+    assert.equal((await page.request.get(href)).status(), 200, `icon ${href}`);
+  const og = await page.evaluate(() => document.querySelector('meta[property="og:image"]').content);
+  assert.equal((await page.request.get(base + og.split('/quiet-signal/')[1])).status(), 200, 'og:image not in release');
   await page.locator('#run').click();
   const same = await page.locator('#outcome').textContent();
   for (const pet of ['aster', 'buer', 'piko']) {
@@ -66,7 +70,7 @@ if (!base || !base.endsWith('/quiet-signal/')) { console.error('usage: node scri
   const out = {base, engine: 'Chromium', content_security_policy: csp, first_load_bytes_uncompressed: firstLoad,
     checks: ['release CSP on both pages', 'no CSP violations', 'no page errors', 'same-origin requests only',
       'fonts loaded', 'companion sprite applied', 'legend colours under CSP', 'companion/theme result invariance',
-      'gallery and Ochre', 'complementarity optimal pair', '320/390/768 no overflow', 'research figure', 'relative navigation back']};
+      'gallery and Ochre', 'seal favicons and og:image served', 'complementarity optimal pair', '320/390/768 no overflow', 'research figure', 'relative navigation back']};
   fs.writeFileSync('results/hosted_checks.json', JSON.stringify(out, null, 2) + '\n');
   await browser.close();
   console.log(`Hosted checks passed at ${base}; first load ${firstLoad.toLocaleString()} bytes uncompressed.`);

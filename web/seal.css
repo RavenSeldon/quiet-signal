@@ -1,0 +1,52 @@
+/* The Quiet Signal / Seal edition / presentation 0.4.
+   Layered over identity.css. The prominent colour moves to the iridescent Maitrism seal
+   palette shared by the author's other projects; the citron green stays as the colour of
+   the signal itself: where attention lands (focus, selection), the pulse, and the dot.
+   Palette sampled from docs/seal/maitrism-glyph.svg. No script, data or result changes. */
+:root{
+  --seal-peach:#fddab2;--seal-rose:#fbb6c5;--seal-orchid:#d996f8;--seal-violet:#af90fb;--seal-peri:#8095fa;--seal-sky:#7cc1ff;
+  --signal:#dcff57;
+  --mint:var(--seal-sky);--gold:var(--seal-rose);--lav:var(--seal-violet);--blue:var(--seal-sky);--tint:#7cc1ff0e;
+  --seal:linear-gradient(90deg,var(--seal-peach),var(--seal-rose) 24%,var(--seal-orchid) 46%,var(--seal-peri) 70%,var(--seal-sky));
+  --seal-text:var(--seal);
+}
+:root[data-theme=light]{
+  --signal:#435b00;
+  --mint:#1d5fa8;--gold:#a8325f;--lav:#6b35bf;--blue:#1d5fa8;--tint:#1d5fa80c;
+  --seal-text:linear-gradient(90deg,#a4502a,#b02e66 28%,#7b37c0 55%,#3550c0 78%,#1d63a8);
+}
+::selection{background:var(--signal);color:var(--bg)}
+:focus-visible{outline-color:var(--signal)}
+
+/* Title: the house iridescence, with the green dot as the one quiet signal. */
+.title-signal{color:var(--mint)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .title-signal{background:var(--seal-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+}
+.title-dot{color:var(--signal)}
+
+/* Hero object: three channels in seal colours; the hatched signal and the pulse are green. */
+.ribbon-coral{stroke:var(--seal-rose)}.ribbon-violet{stroke:var(--seal-violet)}.ribbon-lime{stroke:var(--seal-sky)}
+:root[data-theme=light] .ribbon-coral{stroke:var(--gold)}:root[data-theme=light] .ribbon-violet{stroke:var(--lav)}:root[data-theme=light] .ribbon-lime{stroke:var(--mint)}
+.hatched-signal{color:var(--signal)}.pulse-point{fill:var(--signal)}
+
+/* Primary actions and the observatory carry the seal gradient. */
+.primary{background:var(--seal);border-color:transparent;color:#030304}
+.primary:hover{background:var(--text);border-color:var(--text);color:var(--bg)}
+.experiment{position:relative;border-top:1px solid var(--line)}
+.experiment::before{content:'';position:absolute;inset:0 0 auto 0;height:3px;background:var(--seal);z-index:1}
+:root[data-theme=light] .experiment::before{background:var(--seal-text)}
+input[type=range]{accent-color:var(--mint)}
+
+/* Read signals and the exact result keep the signal colour. */
+.signal.read .sensor-reading{color:var(--signal)}
+.outcome{border-top-color:var(--line)}
+.outcome-note{color:var(--signal)}
+
+/* Footer seal: the way home to Neurascape. */
+.seal-home{display:inline-flex;vertical-align:middle;margin-right:12px;border:0!important}
+.seal-home img{display:block;width:22px;height:22px;border-radius:5px}
+.seal-home:hover img,.seal-home:focus-visible img{box-shadow:0 0 0 1px var(--seal-sky)}
+
+@media(forced-colors:active){.experiment::before{background:CanvasText}.title-signal{color:CanvasText;background:none}}
+#signal-hatch path{stroke:var(--signal)}

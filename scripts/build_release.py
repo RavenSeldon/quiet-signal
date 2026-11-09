@@ -24,11 +24,13 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 DIST = ROOT / "dist"
 OUT = DIST / "quiet-signal"
-TAG = "site-2026-11-09"
+TAG = "site-2026-11-09-r2"
 ZIP = DIST / f"quiet-signal-{TAG}.zip"
 
-# Loaded by no v0.3 page; retained in web/ as v0.2 history only.
+# Loaded by no current page; retained in web/ as release history only
+# (v0.2 canon stylesheet and Space Mono; v0.3 favicon).
 EXCLUDE = {
+    "assets/signal-mark.svg",
     "canon.css",
     "assets/fonts/SpaceMono-Regular.ttf",
     "assets/fonts/SpaceMono-Bold.ttf",
@@ -82,7 +84,9 @@ def main():
             refs = re.findall(r'(?:src|href)="([^"#?]+)"', text) + re.findall(r"url\('([^']+)'\)", text)
             for ref in refs:
                 if re.match(r"^(https?:|mailto:|data:)", ref):
-                    if p.suffix == ".html" and re.search(rf'<(?:script|link)[^>]*(?:src|href)="{re.escape(ref)}"', text):
+                    loads = (rf'<script[^>]*\bsrc="{re.escape(ref)}"',
+                             rf'<link[^>]*\brel="(?:stylesheet|preload|modulepreload|icon|apple-touch-icon|manifest)"[^>]*\bhref="{re.escape(ref)}"')
+                    if p.suffix == ".html" and any(re.search(x, text) for x in loads):
                         problems.append(f"third-party script or stylesheet in {rel}: {ref}")
                     continue
                 target = str((p.parent / ref).resolve().relative_to(WEB.resolve())) if not ref.endswith("/") else None
@@ -107,12 +111,12 @@ def main():
     release = {
         "project": "The Quiet Signal",
         "release": TAG,
-        "presentation": "0.3",
+        "presentation": "0.4",
         "scientific_model": "0.1",
         "route": "/quiet-signal/",
         "source_identity": source_identity(),
         "content_security_policy": CSP,
-        "excluded_v02_history": sorted(EXCLUDE),
+        "excluded_history": sorted(EXCLUDE),
         "total_bytes": total,
         "files": entries,
     }

@@ -2,7 +2,7 @@
   "base": "http://127.0.0.1:5055/quiet-signal/",
   "engine": "Chromium",
   "content_security_policy": "default-src 'none'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'",
-  "first_load_bytes_uncompressed": 2148507,
+  "first_load_bytes_uncompressed": 2169885,
   "checks": [
     "release CSP on both pages",
     "no CSP violations",
@@ -13,6 +13,7 @@
     "legend colours under CSP",
     "companion/theme result invariance",
     "gallery and Ochre",
+    "seal favicons and og:image served",
     "complementarity optimal pair",
     "320/390/768 no overflow",
     "research figure",

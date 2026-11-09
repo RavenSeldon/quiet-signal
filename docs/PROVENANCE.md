@@ -98,3 +98,10 @@ record tests to the identity baseline, and built the release, blog blueprint,
 droplet installer and hosted browser check. The blueprint was applied to the
 blog's working tree only. Claude made no commit, push, release or server change;
 those remain the author's. See `PRESENTATION_V03.md` and `deploy/DEPLOY.md`.
+
+## Presentation v0.4 (Seal edition)
+
+Ben supplied the Maitrism glyph (`docs/seal/maitrism-glyph.svg`, unchanged) on
+9 November 2026 as the main favicon and unifying palette. Claude derived the
+favicon, palette layer (`web/seal.css`), outcome placement, `web/ux.js` and link
+preview metadata. No experiment file changed. See `PRESENTATION_V04.md`.

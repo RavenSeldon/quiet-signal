@@ -6,8 +6,8 @@ SKIP={'.venv','.cache','node_modules','__pycache__','.git','.DS_Store','dist'}
 manifest=ROOT/'results/release_manifest.json'
 files=sorted(p for p in ROOT.rglob('*') if p.is_file() and not any(s in SKIP for s in p.relative_to(ROOT).parts) and p!=manifest)
 identities={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
-manifest.write_text(json.dumps({'project':'The Quiet Signal','version':'0.3.0','files':identities},indent=2)+'\n')
-archive=ROOT.parent/'quiet-signal-v0.3.zip'
+manifest.write_text(json.dumps({'project':'The Quiet Signal','version':'0.4.0','files':identities},indent=2)+'\n')
+archive=ROOT.parent/'quiet-signal-v0.4.zip'
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
     for p in sorted([*files,manifest]):
         name='quiet-signal/'+str(p.relative_to(ROOT))

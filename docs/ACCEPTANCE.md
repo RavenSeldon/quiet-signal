@@ -62,3 +62,6 @@ blog blueprint and droplet installer are verified locally and through the real b
 application (`deploy/DEPLOY.md`, `results/hosted_checks.json`). Going live needs the
 author's commits, the GitHub release and one droplet command. No scientific gate,
 result or limitation changes.
+
+Presentation v0.4 (Seal edition) changes palette, favicon, outcome placement and
+link previews only; both byte-identity baselines still hold (`PRESENTATION_V04.md`).

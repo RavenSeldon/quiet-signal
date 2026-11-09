@@ -1,8 +1,30 @@
 # Deploying The Quiet Signal → https://benamuwo.me/quiet-signal/
 
-**Status:** Prepared and verified on 9 November 2026. **Not yet live.** The steps below need the author: committing, pushing, publishing the GitHub release, and pasting one command into the droplet console.
+**Status:** `site-2026-11-09` is live (installed 9 November 2026). The next release, **`site-2026-11-09-r2`** (presentation v0.4, Seal edition), is built and verified but not yet published.
 
-The pattern is the same as Schrödinger's Civilization, First Notice and The Seventh Seat. Static files go on the droplet at `/srv/quiet-signal/current/quiet-signal/`, and a small blueprint in the Neurascape Flask blog serves them. The release is built on the Mac. The droplet only receives files, and it checks them against a pinned fingerprint first.
+## Updating to a New Release (Blog Already Done)
+
+The blog blueprint is already on the droplet, so an update only touches the static files.
+
+```sh
+cd ~/Root/quiet-signal
+git add -A && git commit -m "Presentation 0.4: Maitrism seal favicon and palette, outcome placement, link previews"
+git push
+python3 scripts/build_release.py        # must print zip sha256: dc34ebcadb920f67a810b0663759c8f83125a43e2cf29dc0d811716c2293278f
+gh release create site-2026-11-09-r2 dist/quiet-signal-site-2026-11-09-r2.zip \
+  --title "The Quiet Signal · site 2026-11-09 r2 (Seal edition)" \
+  --notes "Presentation 0.4 over scientific model 0.1. Verified by deploy/droplet_install.sh against RELEASE.json."
+```
+
+Then, in the DigitalOcean console:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/RavenSeldon/quiet-signal/main/deploy/droplet_install.sh | SKIP_BLOG=1 bash
+```
+
+The previous release stays on the droplet, and the installer switches back to it if a live check fails. A browser may show the old favicon until its cache refreshes, because favicons are cached separately from pages.
+
+The sections below describe the first deployment and the serving rules. They still apply.
 
 ## What Is Prepared
 
