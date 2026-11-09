@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 DIST = ROOT / "dist"
 OUT = DIST / "quiet-signal"
-TAG = "site-2026-11-09-r4"
+TAG = "site-2026-11-09-r5"
 ZIP = DIST / f"quiet-signal-{TAG}.zip"
 
 # Loaded by no current page; retained in web/ as release history only
@@ -111,7 +111,7 @@ def main():
     release = {
         "project": "The Quiet Signal",
         "release": TAG,
-        "presentation": "0.4",
+        "presentation": "0.5",
         "scientific_model": "0.1",
         "route": "/quiet-signal/",
         "source_identity": source_identity(),

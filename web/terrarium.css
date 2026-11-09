@@ -1,0 +1,40 @@
+/* The Quiet Signal / Terrarium / presentation 0.5.
+   Each companion lives in a small cosmic terrarium: the arch becomes a glass vessel, and a
+   world tree (after Yggdrasil) holds the companion at its heart. Nine small worlds sit on its
+   branches and roots; the three roots take the channel colours, and one green point at the
+   root is the quiet signal. Presentation only: no element here represents data or a result.
+   Layered after seal.css; uses only the seal palette and the signal green. */
+.terrarium{position:absolute;left:50%;top:88px;width:240px;height:216px;transform:translateX(-50%);z-index:-1;pointer-events:none;overflow:visible}
+.tr-stars circle{fill:var(--text);opacity:.42}
+.tr-tree{opacity:.62}
+.tr-trunk{stroke:var(--seal-violet);stroke-width:2.2;opacity:.75}
+.tr-branch{stroke:var(--seal-violet);stroke-width:1.1;opacity:.7}
+.tr-const{stroke:var(--seal-peri);stroke-width:.5;stroke-dasharray:1.5 2.5;opacity:.75}
+.tr-root{stroke-width:1.1}.tr-r0{stroke:var(--seal-rose)}.tr-r1{stroke:var(--seal-violet)}.tr-r2{stroke:var(--seal-sky)}
+.tr-moss{stroke:var(--seal-sky);stroke-width:.6;stroke-dasharray:.5 3;opacity:.5}
+.tr-worlds circle{opacity:.9}
+.w-rose{fill:var(--seal-rose)}.w-violet{fill:var(--seal-violet)}.w-sky{fill:var(--seal-sky)}.w-peach{fill:var(--seal-peach)}.w-peri{fill:var(--seal-peri)}.w-orchid{fill:var(--seal-orchid)}
+.tr-signal{fill:var(--signal)}
+/* Glass: an iridescent rim on the vessel and a faint sheen on its left wall. */
+.companion{border-color:transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(160deg,#fddab24d,#fbb6c540 26%,#d996f840 50%,#8095fa45 74%,#7cc1ff4d) border-box}
+.companion::after{content:'';position:absolute;inset:5px;border-radius:140px 140px 8px 8px;pointer-events:none;z-index:1;background:linear-gradient(100deg,#ffffff0d 0,#ffffff05 9%,transparent 20%),radial-gradient(ellipse 60% 18% at 50% 100%,#af90fb12,transparent 70%)}
+/* Gallery: each card is a small jar with a lit floor and a glass sheen. */
+.companion-card::before{content:'';position:absolute;inset:4px;border-radius:76px 76px 4px 4px;pointer-events:none;background:radial-gradient(ellipse 34% 5% at 50% 66%,#af90fb2e,transparent 72%),radial-gradient(circle at 22% 24%,#f2f2ea66 0 .7px,transparent 1.2px),radial-gradient(circle at 80% 34%,#f2f2ea4d 0 .6px,transparent 1.1px),radial-gradient(circle at 84% 24%,#7cc1ff66 0 .7px,transparent 1.2px),linear-gradient(100deg,#ffffff0b,transparent 22%)}
+/* Light theme: the same vessel drawn in ink on paper. */
+:root[data-theme=light] .tr-stars circle{fill:var(--muted);opacity:.5}
+:root[data-theme=light] .tr-tree{opacity:.5}
+:root[data-theme=light] .tr-trunk,:root[data-theme=light] .tr-branch{stroke:var(--lav)}
+:root[data-theme=light] .tr-const{stroke:var(--mint)}
+:root[data-theme=light] .tr-r0{stroke:var(--gold)}:root[data-theme=light] .tr-r1{stroke:var(--lav)}:root[data-theme=light] .tr-r2,:root[data-theme=light] .tr-moss{stroke:var(--mint)}
+:root[data-theme=light] .tr-sky circle[fill^=url]{opacity:.55}
+:root[data-theme=light] .companion{background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(160deg,#a4502a40,#b02e6638 30%,#7b37c038 55%,#1d63a845) border-box}
+:root[data-theme=light] .companion::after{background:linear-gradient(100deg,#ffffff8c 0,#ffffff33 8%,transparent 18%)}
+:root[data-theme=light] .companion-card::before{background:radial-gradient(ellipse 34% 5% at 50% 66%,#6b35bf1f,transparent 72%),linear-gradient(100deg,#ffffff80,transparent 22%)}
+/* Slow, quiet motion: three stars and the signal breathe. Off for reduced motion or pause. */
+@keyframes tr-twinkle{0%,100%{opacity:.42}50%{opacity:.08}}
+@keyframes tr-breathe{0%,100%{opacity:.95}50%{opacity:.35}}
+.tw{animation:tr-twinkle 7s ease-in-out infinite}.tw2{animation-duration:9s;animation-delay:-3s}.tw3{animation-duration:11s;animation-delay:-6s}
+.tr-signal{animation:tr-breathe 6s ease-in-out infinite}
+.motion-paused .terrarium *{animation:none!important}
+@media(prefers-reduced-motion:reduce){.terrarium *{animation:none!important}}
+@media(forced-colors:active){.terrarium,.companion::after,.companion-card::before{display:none}.companion{border-color:CanvasText;background:Canvas}}

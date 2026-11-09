@@ -1,6 +1,6 @@
 # The Quiet Signal
 
-A small, exact experiment in what deserves attention. **Presentation v0.4 (Seal edition) / scientific model v0.1.** Commissioned by **Ben Amuwo**,
+A small, exact experiment in what deserves attention. **Presentation v0.5 (Terrarium) / scientific model v0.1.** Commissioned by **Ben Amuwo**,
 November 8, 2026. Built with Codex assistance. This is an isolated research prototype,
 not an amendment to Sīdus or a new Hatchery release.
 
@@ -25,7 +25,8 @@ bundled from the Hatchery site for offline use.
 Your theme and companion preferences are saved locally when browser storage is
 available. No analytics or account is involved.
 
-See `docs/PRESENTATION_V04.md` for the current design: the Maitrism seal favicon and palette,
+The companions now live in a small cosmic terrarium (`docs/PRESENTATION_V05.md`).
+See `docs/PRESENTATION_V04.md` for the seal design underneath it: the Maitrism seal favicon and palette,
 with the citron kept as the colour of the signal itself. `PRESENTATION_V03.md` records
 the Blackout Broadcast identity underneath it.
 The v0.2 record remains available as release history.
