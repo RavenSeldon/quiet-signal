@@ -1,6 +1,6 @@
 # Deploying The Quiet Signal → https://benamuwo.me/quiet-signal/
 
-**Status:** `site-2026-11-09` and then `site-2026-11-09-r2` (Seal edition, with a thickened favicon derivative) were published on 9 November 2026. **`site-2026-11-09-r3`** uses Ben's seal unchanged as the favicon, site icon and navigation-bar mark. It is built and verified but not yet published.
+**Status:** On 9 November 2026, `site-2026-11-09`, `-r2` and `-r3` were published. **`site-2026-11-09-r4`** makes the seal the only mark in the navigation bar (the three-bar mark is removed) and keeps the footer on the masthead's gutter. It is built and verified but not yet published.
 
 ## Updating to a New Release (Blog Already Done)
 
@@ -8,12 +8,12 @@ The blog blueprint is already on the droplet, so an update only touches the stat
 
 ```sh
 cd ~/Root/quiet-signal
-git add -A && git commit -m "Seal edition r3: the supplied seal as favicon, site icon and nav mark"
+git add -A && git commit -m "Seal edition r4: seal is the only nav mark; footer aligned to masthead gutter"
 git push
-python3 scripts/build_release.py        # must print zip sha256: f05a60056804bbe92ad183b1f9f2137d6fe9b35982fa66efec4d0142bcfb931c
-gh release create site-2026-11-09-r3 dist/quiet-signal-site-2026-11-09-r3.zip \
-  --title "The Quiet Signal · site 2026-11-09 r3 (Seal edition)" \
-  --notes "Presentation 0.4 over scientific model 0.1, with the Maitrism seal unchanged as favicon and nav mark. Verified by deploy/droplet_install.sh against RELEASE.json."
+python3 scripts/build_release.py        # must print zip sha256: 4611e20189eb8e57a6b8bb0a582685367c187d8a04b0108c67f8e50535ae997a
+gh release create site-2026-11-09-r4 dist/quiet-signal-site-2026-11-09-r4.zip \
+  --title "The Quiet Signal · site 2026-11-09 r4 (Seal edition)" \
+  --notes "Presentation 0.4 over scientific model 0.1, with the Maitrism seal unchanged as favicon, site icon and sole nav mark. Verified by deploy/droplet_install.sh against RELEASE.json."
 ```
 
 Then, in the DigitalOcean console:
@@ -22,7 +22,7 @@ Then, in the DigitalOcean console:
 curl -fsSL https://raw.githubusercontent.com/RavenSeldon/quiet-signal/main/deploy/droplet_install.sh | SKIP_BLOG=1 bash
 ```
 
-The previous release stays on the droplet, and the installer switches back to it if a live check fails. A browser may show the old favicon until its cache refreshes, because favicons are cached separately from pages. Releases `site-2026-11-09` and `-r2` stay on GitHub unchanged.
+The previous release stays on the droplet, and the installer switches back to it if a live check fails. A browser may show the old favicon until its cache refreshes, because favicons are cached separately from pages. Earlier releases stay on GitHub unchanged.
 
 The sections below describe the first deployment and the serving rules. They still apply.
 

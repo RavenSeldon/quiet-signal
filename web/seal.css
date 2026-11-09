@@ -60,3 +60,5 @@ input[type=range]{accent-color:var(--mint)}
 .seal-home{overflow:hidden;border-radius:5px;background:#000;width:22px;height:22px}.seal-home img{transform:scale(1.7)}
 @media(max-width:760px){.masthead-brand{gap:10px}.seal-nav{width:30px;height:30px}}
 @media(max-width:450px){.masthead-brand{gap:8px}.seal-nav{width:26px;height:26px;border-radius:6px}}
+/* Keep the footer on the same 48px gutter as the masthead between 1100px and 1360px. */
+@media(min-width:1101px){footer{box-sizing:border-box;width:calc(100% - 96px);max-width:1264px;margin-inline:auto}}

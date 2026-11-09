@@ -30,7 +30,11 @@ Sīdus keeps its own gilded identity. This page is allowed to branch out.
 
   Light theme: olive `#435b00`. Chart colours are otherwise unchanged.
 
-- **Seal in the nav bar:** the seal sits at the left of the navigation bar, linking home to benamuwo.me, beside the three-bar signal mark, which is kept. CSS scales the frame so the figure, rather than its black field, fills the 34 px mark (26 px on phones); the file itself is not altered. Published as `site-2026-11-09-r3`. `-r2` had carried the thickened derivative instead.
+- **Seal in the nav bar:** the seal is the navigation bar's only mark, at the far left, linking home to benamuwo.me. CSS scales its frame so the figure, rather than its black field, fills the 34 px mark (26 px on phones); the file itself is not altered. The v0.3 three-bar mark is removed from the bar, and the hero's signal drawing stays. Release history:
+  - `-r2` carried a thickened favicon derivative;
+  - `-r3` used the seal but kept the bar mark beside it;
+  - `-r4` is current.
+- **Footer:** the footer now sits on the masthead's 48 px gutter between 1100 and 1360 px wide. Before, it ran nearly to the window edges at those widths.
 
 ## Quality of Life
 
@@ -55,7 +59,7 @@ The three rendered images carry an embedded C2PA Content Credentials manifest na
 | `check_export.cjs` | 640 comparisons, 35,840 traces passed |
 | `check_browser.cjs` (file://) | Passed; screenshots regenerated under v0.4 |
 | `check_hosted.cjs` through the real blog `create_app()` with the release CSP | Passed: no CSP violations, page errors or off-origin requests; favicons and `og:image` served |
-| Release `site-2026-11-09-r3` | 53 files + receipt; zip SHA-256 `f05a6005…931c`; receipt `7fe716fe…5f1b`; identical when rebuilt on the author's machine |
+| Release `site-2026-11-09-r4` | 53 files + receipt; zip SHA-256 `4611e201…997a`; receipt `65b9a37b…6e91`; identical when rebuilt on the author's machine |
 | Droplet installer against a local stand-in | Verified and installed |
 
 Visual review: dark, light and 390 px mobile were inspected by screenshot. There was no screen-reader audit or human study.
