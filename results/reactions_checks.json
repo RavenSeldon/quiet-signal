@@ -1,0 +1,44 @@
+{
+  "url": "http://127.0.0.1:5055/quiet-signal/",
+  "engine": "Chromium",
+  "sequences": {
+    "optimal": [
+      1,
+      5,
+      0
+    ],
+    "myopic": [
+      6,
+      3,
+      0
+    ],
+    "gate": [
+      1,
+      8,
+      3,
+      0
+    ]
+  },
+  "rows": {
+    "wait": 6,
+    "toward": 1,
+    "review": 8,
+    "jump": 4,
+    "fail": 5,
+    "wave": 3,
+    "idle": 0
+  },
+  "checks": [
+    "waits before the first episode",
+    "optimal re-enactment matches outcome",
+    "myopic silence re-enactment",
+    "closed gate: toward → review → wave",
+    "jar levels 1 / 0 from exact expectations",
+    "below-silence jar",
+    "manual jar is neutral",
+    "keyboard timeline re-enactment",
+    "re-enactment never changes the outcome",
+    "paused companion holds the outcome pose",
+    "no page errors"
+  ]
+}

@@ -2,7 +2,7 @@
   "base": "http://127.0.0.1:5055/quiet-signal/",
   "engine": "Chromium",
   "content_security_policy": "default-src 'none'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'",
-  "first_load_bytes_uncompressed": 2213212,
+  "first_load_bytes_uncompressed": 2219596,
   "checks": [
     "release CSP on both pages",
     "no CSP violations",

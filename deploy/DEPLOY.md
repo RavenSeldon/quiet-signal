@@ -1,6 +1,6 @@
 # Deploying The Quiet Signal → https://benamuwo.me/quiet-signal/
 
-**Status:** On 9 November 2026, `site-2026-11-09` through `-r4` were published. **`site-2026-11-09-r5`** (presentation 0.5, Terrarium) is built and verified but not yet published.
+**Status:** On 9 November 2026, `site-2026-11-09` through `-r5` were published. **`site-2026-11-09-r6`** (presentation 0.6, Reactions) is built and verified but not yet published.
 
 ## Updating to a New Release (Blog Already Done)
 
@@ -8,12 +8,12 @@ The blog blueprint is already on the droplet, so an update only touches the stat
 
 ```sh
 cd ~/Root/quiet-signal
-git add -A && git commit -m "Presentation 0.5: cosmic terrarium for the companions"
+git add -A && git commit -m "Presentation 0.6: companions re-enact episodes; the jar shows the policy"
 git push
-python3 scripts/build_release.py        # must print zip sha256: ec8f195d75d07ec025ef8b8aece321dcf7440adf11bd8e88f67a004758b589d8
-gh release create site-2026-11-09-r5 dist/quiet-signal-site-2026-11-09-r5.zip \
-  --title "The Quiet Signal · site 2026-11-09 r5 (Terrarium)" \
-  --notes "Presentation 0.5 over scientific model 0.1: a cosmic terrarium for the companions. Verified by deploy/droplet_install.sh against RELEASE.json."
+python3 scripts/build_release.py        # must print zip sha256: d78d4efd8818a0136029abfd3aecce0baaf2c07671cfb1a9ba48d6d37b878c56
+gh release create site-2026-11-09-r6 dist/quiet-signal-site-2026-11-09-r6.zip \
+  --title "The Quiet Signal · site 2026-11-09 r6 (Reactions)" \
+  --notes "Presentation 0.6 over scientific model 0.1: companions re-enact each episode; the terrarium shows the policy's exact average. Verified by deploy/droplet_install.sh against RELEASE.json."
 ```
 
 Then, in the DigitalOcean console:

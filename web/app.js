@@ -7,13 +7,14 @@ const text={
  alignment:{description:'All three monitors watch the same fair route bit X, at different reliabilities. This is a world where information and decision value can agree. Route X is the successful one.',names:['The clear warning','The softer warning','The faint warning'],desc:['Observes X · 90% reliable','Observes X · 70% reliable','Observes X · 60% reliable'],lesson:'At one packet, several policies tie. Raise the interruption cost to 10: both value policies prefer reserve and silence.'},
  disconnected:{description:'The sensors still see the fair bit X, which determines the successful route. But their connection to the decision mechanism is deliberately cut. The consumer always uses its prior and reserves the resource.',names:['The clear warning','The softer warning','The faint warning'],desc:['Observes X · 90% · gate closed','Observes X · 70% · gate closed','Observes X · 60% · gate closed'],lesson:'Choose World information and listen. Information arrives, but the closed gate prevents any change in action. Costs are still paid.'}
 };
-let seed=42, revealed=false, result=null, selected=[], paused=matchMedia('(prefers-reduced-motion: reduce)').matches, frame=0, row=6;
+let seed=42, revealed=false, result=null, selected=[], paused=matchMedia('(prefers-reduced-motion: reduce)').matches, timelines={};
 const fmt=(x,n=2)=>Math.abs(x)<1e-10?(0).toFixed(n):x.toFixed(n);
 const sign=x=>(x>1e-10?'+':'')+fmt(x);
 const action=a=>['Reserve','Route 0','Route 1'][a];
 const state=()=>({name:$('world').value,world:D.worlds[$('world').value],budget:Number($('budget').value),cost:Number($('cost').value),policy:$('policy').value});
 function refresh(){
  const s=state(), t=text[s.name];
+ QuietReactions.jar(s);
  $('budget-value').textContent=`${s.budget} packet${s.budget===1?'':'s'}`;
  $('world-description').textContent=t.description; $('lesson').textContent=t.lesson;
  $('episode-label').textContent=`WORLD ${seed} · ${revealed?'REVEALED':'UNREVEALED'}`;
@@ -29,10 +30,10 @@ function refresh(){
   b.onclick=()=>{if(selected.includes(i))selected=selected.filter(j=>j!==i);else if(selected.length<s.budget)selected.push(i);else{$('selection-note').textContent='Budget full. Deselect a monitor or increase the packet budget.';return;}reset();$('signals').children[i].focus();};
   $('signals').append(b);
  }
- if(!revealed){$('outcome').hidden=true;$('silence').textContent=s.budget===0?'Silence is the whole budget.':'Listening begins with a choice.';$('pet-status').textContent='Quiet is an available action.';row=6;}
+ if(!revealed){$('outcome').hidden=true;$('silence').textContent=s.budget===0?'Silence is the whole budget.':'Listening begins with a choice.';$('pet-status').textContent='Quiet is an available action.';}
  renderEvidence(s); renderTimelines(s);
 }
-function reset(){revealed=false;result=null;frame=0;refresh();}
+function reset(){revealed=false;result=null;QuietReactions.rest();refresh();}
 function renderEvidence(s){
  const summaries=s.world.summaries[String(s.cost)];
  const css=getComputedStyle(document.documentElement), token=n=>css.getPropertyValue(n).trim();
@@ -57,7 +58,7 @@ function run(){
  const s=state(), a=R.atom(s.world,seed);
  result=R.replay(s.world,s.cost,s.budget,s.policy,a,seed+901,selected);revealed=true;refresh();
  const r=result, node=r.node, names=r.trace.map(x=>`0${x.sensor+1} → ${x.signal}`), truth=s.world.states[a.state];
- row=r.trace.length?(s.name==='disconnected'?8:3):6;frame=0;
+ QuietReactions.play(r);
  $('silence').textContent=r.trace.length?`${r.trace.length} signal${r.trace.length===1?'':'s'}. One decision.`:`${QuietCompanion.current.shortName} chooses silence.`;
  $('pet-status').textContent=r.trace.length?`${action(r.action)} · monitor posterior P(route 1) = ${fmt(node.target_probability*100,1)}%`:s.budget===0?'No packet slots available.':s.policy==='none'?'No monitoring is the selected policy.':s.policy==='manual'?'You chose to leave every monitor unread.':'This policy found no query worth taking.';
  const gate=s.name==='disconnected';
@@ -68,9 +69,10 @@ function run(){
  $('outcome').hidden=false;
 }
 function renderTimelines(s){
+ timelines={};
  if(!revealed){$('timeline-body').innerHTML='<tr><td colspan="6">Waiting for an episode.</td></tr>';return;}
  const a=R.atom(s.world,seed);
- $('timeline-body').innerHTML=Object.keys(D.policies).map(p=>{const r=R.replay(s.world,s.cost,s.budget,p,a,seed+901);return `<tr class="${p==='full'?'reference':''}"><td>${D.policies[p]}</td><td>${r.trace.map(x=>`0${x.sensor+1}:${x.signal}`).join(' · ')||'Silence'}</td><td>${action(r.action)}</td><td>${sign(r.utility)}</td><td>${fmt(r.cost)}</td><td>${sign(r.net)}</td></tr>`;}).join('');
+ $('timeline-body').innerHTML=Object.keys(D.policies).map(p=>{const r=R.replay(s.world,s.cost,s.budget,p,a,seed+901);timelines[p]=r;return `<tr class="${p==='full'?'reference':''}" data-policy="${p}" tabindex="0" aria-label="${D.policies[p]}: ${action(r.action)}, net ${sign(r.net)}. Select to watch the companion re-enact this timeline."><td>${D.policies[p]}</td><td>${r.trace.map(x=>`0${x.sensor+1}:${x.signal}`).join(' · ')||'Silence'}</td><td>${action(r.action)}</td><td>${sign(r.utility)}</td><td>${fmt(r.cost)}</td><td>${sign(r.net)}</td></tr>`;}).join('');
 }
 for(const id of ['world','policy','cost'])$(id).onchange=()=>{if(id==='world'){$('budget').value=$('world').value==='complementarity'?'2':'1';selected=[];}reset();};
 $('budget').oninput=()=>{selected=selected.slice(0,Number($('budget').value));reset();};
@@ -79,7 +81,9 @@ $('next').onclick=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;reset();};
 function motion(){document.documentElement.classList.toggle('motion-paused',paused);document.body.classList.toggle('motion-paused',paused);$('motion').textContent=paused?'Resume motion':'Pause motion';$('motion').setAttribute('aria-pressed',String(paused));}
 $('motion').onclick=()=>{paused=!paused;motion();};
 matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{paused=e.matches;motion();});
-setInterval(()=>{if(document.hidden||paused){frame=0;}else{frame=(frame+1)%QuietCompanion.frames(row);}$('pet').style.backgroundPosition=`${-192*frame}px ${-208*row}px`;},180);
+function playTimeline(tr){const p=tr&&tr.dataset.policy;if(!p||!timelines[p])return;for(const x of $('timeline-body').rows)x.classList.toggle('is-playing',x===tr);QuietReactions.play(timelines[p]);$('companion-announcement').textContent=`${QuietCompanion.current.shortName} re-enacts ${D.policies[p]}: ${action(timelines[p].action)}, net ${sign(timelines[p].net)}.`;}
+$('timeline-body').addEventListener('click',e=>playTimeline(e.target.closest('tr[data-policy]')));
+$('timeline-body').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();playTimeline(e.target.closest('tr[data-policy]'));}});
 document.addEventListener('quiet:theme',()=>renderEvidence(state()));
-document.addEventListener('quiet:companion',()=>{frame=0;if(revealed && result && !result.trace.length)$('silence').textContent=`${QuietCompanion.current.shortName} chooses silence.`;});
+document.addEventListener('quiet:companion',()=>{QuietReactions.restart();if(revealed && result && !result.trace.length)$('silence').textContent=`${QuietCompanion.current.shortName} chooses silence.`;});
 motion();refresh();

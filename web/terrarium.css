@@ -38,3 +38,17 @@
 .motion-paused .terrarium *{animation:none!important}
 @media(prefers-reduced-motion:reduce){.terrarium *{animation:none!important}}
 @media(forced-colors:active){.terrarium,.companion::after,.companion-card::before{display:none}.companion{border-color:CanvasText;background:Canvas}}
+/* Presentation 0.6 / Reactions: the jar reflects the selected policy's exact average.
+   --jar is set by reactions.js from exported expectations (0 = no better than silence, 1 = best possible). */
+.tr-halo{fill:var(--signal);opacity:calc(.06 + .22*var(--jar,.45));transform-box:fill-box;transform-origin:center;transform:scale(calc(.3 + .8*var(--jar,.45)));transition:transform .7s ease,opacity .7s ease}
+.terrarium.is-optimal .tr-const{stroke:var(--seal-sky);stroke-dasharray:none;stroke-width:.7;opacity:1}
+.terrarium.is-optimal .tr-worlds circle{opacity:1}
+.terrarium.is-below .tr-signal{fill:var(--muted)}
+:root[data-theme=light] .terrarium.is-optimal .tr-const{stroke:var(--mint)}
+.pet-caption .jar-status{display:block;margin:8px auto 0;max-width:250px;font:9px/1.6 var(--mono);letter-spacing:.04em;color:var(--muted)}
+.pet-caption .jar-status::before{content:'';display:inline-block;width:5px;height:5px;margin-right:7px;border-radius:50%;background:var(--signal);vertical-align:1px}
+#timeline-body tr[data-policy]{cursor:pointer}
+#timeline-body tr[data-policy]:hover td{background:var(--tint)}
+#timeline-body tr[data-policy]:focus-visible{outline:2px solid var(--signal);outline-offset:-2px}
+#timeline-body tr.is-playing td{background:var(--tint);color:var(--text)}
+#timeline-body tr.is-playing td:first-child{box-shadow:inset 3px 0 0 var(--signal)}

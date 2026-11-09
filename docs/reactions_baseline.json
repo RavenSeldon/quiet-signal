@@ -1,0 +1,12 @@
+{
+  "note": "Presentation 0.6 intentionally changed only the files listed under changed, for the companion re-enactment and jar. Every other identity-baseline file, and every presentation_baseline file (engine, runtime, data, CSVs, primary figure), is byte-identical.",
+  "changed": {
+    "web/app.js": {
+      "v0.3_identity": "59f94975b6d6eebac21bf26581fb59418e41ed94184b4b186a3e9a828bc55fa0",
+      "v0.6_reactions": "748ebcc2d32b0267c9eaafc991d402536c8f6fc51b18ecb7b0b5abda22eb1e5b"
+    }
+  },
+  "added": {
+    "web/reactions.js": "4c73ed29e8c5ef94157564a95b63dbb26ac163c206fbbd9bfadef442722c411b"
+  }
+}

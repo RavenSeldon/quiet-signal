@@ -1,6 +1,6 @@
 # The Quiet Signal
 
-A small, exact experiment in what deserves attention. **Presentation v0.5 (Terrarium) / scientific model v0.1.** Commissioned by **Ben Amuwo**,
+A small, exact experiment in what deserves attention. **Presentation v0.6 (Reactions) / scientific model v0.1.** Commissioned by **Ben Amuwo**,
 November 8, 2026. Built with Codex assistance. This is an isolated research prototype,
 not an amendment to Sīdus or a new Hatchery release.
 
@@ -26,6 +26,7 @@ Your theme and companion preferences are saved locally when browser storage is
 available. No analytics or account is involved.
 
 The companions now live in a small cosmic terrarium (`docs/PRESENTATION_V05.md`).
+They re-enact each episode, and the jar shows the policy's exact average (`docs/PRESENTATION_V06.md`).
 See `docs/PRESENTATION_V04.md` for the seal design underneath it: the Maitrism seal favicon and palette,
 with the citron kept as the colour of the signal itself. `PRESENTATION_V03.md` records
 the Blackout Broadcast identity underneath it.
@@ -85,6 +86,7 @@ UI checks, install the development-only Playwright dependency and its browser:
 npm ci
 npx playwright install chromium
 node scripts/check_browser.cjs
+node scripts/check_reactions.cjs
 ```
 
 For an existing Playwright installation, set `PLAYWRIGHT_MODULE` to its module

@@ -39,7 +39,14 @@ class RecordTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest(),entry['sha256'])
         for path,digest in json.loads((ROOT/'docs/presentation_baseline.json').read_text()).items():
             self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),digest)
+        reactions=json.loads((ROOT/'docs/reactions_baseline.json').read_text())
         for path,digest in json.loads((ROOT/'docs/identity_baseline.json').read_text()).items():
+            # Presentation 0.6 changed app.js on purpose; the record names old and new identities.
+            if path in reactions['changed']:
+                self.assertEqual(reactions['changed'][path]['v0.3_identity'],digest,path)
+                digest=reactions['changed'][path]['v0.6_reactions']
+            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),digest,path)
+        for path,digest in reactions['added'].items():
             self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),digest,path)
         for entry in json.loads((ROOT/'docs/identity_font_sources.json').read_text()):
             self.assertEqual(hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest(),entry['sha256'])
