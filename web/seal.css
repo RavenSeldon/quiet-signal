@@ -62,3 +62,11 @@ input[type=range]{accent-color:var(--mint)}
 @media(max-width:450px){.masthead-brand{gap:8px}.seal-nav{width:26px;height:26px;border-radius:6px}}
 /* Keep the footer on the same 48px gutter as the masthead between 1100px and 1360px. */
 @media(min-width:1101px){footer{box-sizing:border-box;width:calc(100% - 96px);max-width:1264px;margin-inline:auto}}
+/* QS-002 doorway: a second room in the same observatory. */
+.doorway{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin:0 0 40px;padding:34px 32px;border:1px solid transparent;border-radius:4px;background:linear-gradient(var(--panel),var(--panel)) padding-box,linear-gradient(120deg,#fbb6c555,#af90fb55,#7cc1ff55) border-box}
+.doorway h2{font:500 clamp(28px,3.4vw,42px)/1.1 var(--sans);letter-spacing:-.03em;margin:10px 0 14px;color:var(--text)}
+.doorway p{margin:0 0 6px;color:var(--muted);max-width:62ch}
+.doorway .doorway-lede{font:italic 19px/1.5 var(--serif);color:var(--text)}
+.doorway .doorway-meta{font:10px/1.6 var(--mono);letter-spacing:.08em;margin-top:14px}
+.doorway .primary{flex:none}
+@media(max-width:760px){.doorway{flex-direction:column;align-items:flex-start;padding:26px 20px}}

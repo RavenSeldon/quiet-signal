@@ -1,0 +1,62 @@
+{
+  "configurations": 1323,
+  "aware_vs_information": {
+    "win": 681,
+    "tie": 642,
+    "lose": 0
+  },
+  "aware_vs_blind": {
+    "win": 681,
+    "tie": 642,
+    "lose": 0
+  },
+  "aware_vs_early": {
+    "win": 936,
+    "tie": 387,
+    "lose": 0
+  },
+  "aware_vs_none": {
+    "win": 1002,
+    "tie": 321,
+    "lose": 0
+  },
+  "aware_vs_random": {
+    "win": 1239,
+    "tie": 84,
+    "lose": 0
+  },
+  "aware_vs_optimal": {
+    "win": 0,
+    "tie": 1323,
+    "lose": 0
+  },
+  "early_vs_optimal": {
+    "win": 0,
+    "tie": 387,
+    "lose": 936
+  },
+  "information_vs_optimal": {
+    "win": 0,
+    "tie": 642,
+    "lose": 681
+  },
+  "blind_vs_optimal": {
+    "win": 0,
+    "tie": 642,
+    "lose": 681
+  },
+  "aware_largest_gap": {
+    "gap": 0.0,
+    "deadline": 0,
+    "bell_delay": 1,
+    "p": 0.1,
+    "cost": 0,
+    "budget": 1
+  },
+  "bell_late_cells": 756,
+  "information_vs_aware_when_bell_late": {
+    "win": 0,
+    "tie": 75,
+    "lose": 681
+  }
+}

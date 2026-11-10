@@ -13,6 +13,16 @@ from disk with no server, accounts or network requests. On macOS, double-click
 **Read:** [`docs/RESEARCH_NOTE.md`](docs/RESEARCH_NOTE.md), or the formatted research
 note linked inside the prototype. **See:** [`results/primary_figure.png`](results/primary_figure.png).
 
+## QS—002 · The Last Reversible Moment (WORKING)
+
+A second room, proposed by Ben on 9 November 2026: **what can still be changed?** One clock, three sensors (one of them a perfectly true bell that may ring too late) and a last reversible moment. It lives at `web/last-reversible-moment/` (online: https://benamuwo.me/quiet-signal/last-reversible-moment/).
+
+- Specification and pre-run fixtures: `docs/QS002_SPECIFICATION.md`
+- Findings and limits: `docs/QS002_RESEARCH_NOTE.md`
+- The author's proposal, verbatim: `docs/QS002_PROPOSAL.md`
+
+QS—001 is unchanged.
+
 ## Companions and appearance
 
 Choose **Companion** beside the observatory, or open **Your companions** for the

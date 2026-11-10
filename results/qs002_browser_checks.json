@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:5055/quiet-signal/last-reversible-moment/",
+  "engine": "Chromium",
+  "table_cells_compared": 128,
+  "checks": [
+    "displayed net equals Python for 4 worlds x 4 budgets x 8 policies",
+    "every world/budget/policy episode runs",
+    "clock never shows more readings than the budget",
+    "bell intervention -2.60 -> -0.85",
+    "searched counterexample -1.00 vs -0.78",
+    "manual exact order",
+    "keyboard timeline re-enactment",
+    "paused companion",
+    "jar optimum",
+    "320/390/768/1440 no overflow",
+    "no page errors",
+    "no CSP violations",
+    "same-origin requests only"
+  ]
+}

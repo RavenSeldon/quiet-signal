@@ -105,3 +105,14 @@ Ben supplied the Maitrism glyph (`docs/seal/maitrism-glyph.svg`, unchanged) on
 9 November 2026 as the main favicon and unifying palette. Claude derived the
 favicon, palette layer (`web/seal.css`), outcome placement, `web/ux.js` and link
 preview metadata. No experiment file changed. See `PRESENTATION_V04.md`.
+
+## QS—002 · The Last Reversible Moment
+
+Ben Amuwo supplied the proposal (`QS002_PROPOSAL.md`, preserved verbatim, including its stray link fragments) on 9 November 2026. Claude (Anthropic, Opus 5.5) wrote:
+- the specification and its pre-run fixtures;
+- `quiet_signal/temporal.py`, the benchmark and the adversarial search;
+- the tests, including a rational oracle;
+- the browser model and the page;
+- the checks.
+
+The searched counterexample (world 05) was added after the run and is labelled as such. No commit, push, release or server change was made by Claude.

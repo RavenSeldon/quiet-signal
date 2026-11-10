@@ -1,0 +1,37 @@
+/* QS-002 / The Last Reversible Moment. Layered over the QS-001 stylesheets; same palette,
+   with one new mark: the dashed line of the last reversible moment, drawn in the seal's rose. */
+.qs2-intro h1{font-size:clamp(54px,7.2vw,108px);line-height:.92}
+.qs2-pair{display:grid;gap:14px;align-self:center;padding:14px 0 16px 28px;border-left:1px solid var(--line)}
+.qs2-pair>a,.qs2-pair>div{display:grid;gap:6px;padding:18px 20px;border:1px solid var(--line);border-radius:4px;background:var(--panel);text-decoration:none;color:var(--text)}
+.qs2-pair>div{border-color:transparent;background:linear-gradient(var(--panel),var(--panel)) padding-box,linear-gradient(120deg,#fbb6c566,#af90fb66,#7cc1ff66) border-box}
+.qs2-pair span{font:9px/1.5 var(--mono);letter-spacing:.12em;color:var(--mint)}
+.qs2-pair strong{font:italic 22px/1.3 var(--serif);font-weight:400}
+.qs2-pair small{font:10px/1.6 var(--mono);color:var(--muted)}
+.qs2-pair>a:hover,.qs2-pair>a:focus-visible{border-color:var(--mint)}
+.qs2-controls{grid-template-columns:1.15fr 1fr 1.1fr .8fr 1fr}
+.clock-figure{margin:16px 0 4px}
+#clock svg{display:block;width:100%;height:auto;font-family:var(--mono);overflow:visible}
+.ck-zone{fill:var(--tint)}
+.ck-after{fill:var(--panel);opacity:.55}
+.ck-axis,.ck-tick{stroke:var(--line)}
+.ck-num{font-size:9px;fill:var(--muted);text-anchor:middle}
+.ck-lane{font-size:8.5px;letter-spacing:.08em;fill:var(--muted);text-anchor:end}
+.ck-bar{opacity:.85}.ck-bar.is-ghost{opacity:.28}.ck-bar.is-late{opacity:.35}
+.ck-rose{fill:var(--gold)}.ck-violet{fill:var(--lav)}.ck-sky{fill:var(--mint)}
+.ck-arrive{fill:var(--text)}.ck-arrive.is-late{fill:var(--muted)}
+.ck-read{font-size:10px;fill:var(--text)}
+.ck-deadline{stroke:var(--seal-rose);stroke-width:1.5;stroke-dasharray:4 4}
+:root[data-theme=light] .ck-deadline{stroke:var(--gold)}
+.ck-deadline-label{font-size:8.5px;letter-spacing:.1em;fill:var(--seal-rose)}
+:root[data-theme=light] .ck-deadline-label{fill:var(--gold)}
+.ck-decide{stroke:var(--muted);stroke-width:2}.ck-decide.is-protect{stroke:var(--signal)}
+.ck-decide-label{font-size:9px;letter-spacing:.08em;fill:var(--muted)}.ck-decide-label.is-protect{fill:var(--signal)}
+.qs2-findings{max-width:900px;margin-inline:auto;padding-inline:32px}
+.qs2-findings h2{font:500 clamp(28px,3.4vw,44px)/1.15 var(--sans);letter-spacing:-.03em;margin:18px 0 26px;color:var(--text)}
+.qs2-findings h3{font:500 18px/1.4 var(--sans);color:var(--text);margin:34px 0 10px}
+.qs2-findings b{color:var(--text);font-weight:500}
+.qs2-limits{padding-left:20px}
+.qs2-sources{font-size:12px!important}
+.qs2-hidden{display:none}
+@media(max-width:1100px){.qs2-controls{grid-template-columns:1fr 1fr}.qs2-pair{padding-left:22px}}
+@media(max-width:760px){.qs2-pair{grid-column:1/-1;border-left:0;padding-left:0}.qs2-controls{grid-template-columns:1fr}.qs2-findings{padding-inline:20px}}

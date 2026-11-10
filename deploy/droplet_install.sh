@@ -10,10 +10,10 @@
 # Same pattern as The Seventh Seat's deploy/droplet_install.sh.
 set -euo pipefail
 
-TAG="site-2026-11-09-r6"
+TAG="site-2026-11-09-r7"
 ZIP_URL="https://github.com/RavenSeldon/quiet-signal/releases/download/$TAG/quiet-signal-$TAG.zip"
-ZIP_SHA="d78d4efd8818a0136029abfd3aecce0baaf2c07671cfb1a9ba48d6d37b878c56"
-RELEASE_SHA="19df3a42707bce141c06703f8f9203384f02b6d242f2826581215822fec736a0"
+ZIP_SHA="210963d97fd0ac38e7821d4c64b8c82334b3a7b51364b29748d96e8fe7c0eec9"
+RELEASE_SHA="5b97e23cf5564d849468b7ba83f2e7ce1f1dd18ae630ec14f7a54cb92b978de3"
 BASE="${QUIET_SIGNAL_BASE:-/srv/quiet-signal}"
 SITE="${QUIET_SIGNAL_SITE:-https://benamuwo.me}"
 say() { printf '\n== %s\n' "$*"; }
@@ -67,7 +67,7 @@ echo "live release: $STAMP${PREVIOUS:+ (previous: $PREVIOUS)}"
 
 say "3/3 Checking the live site"
 fail=0
-for path in /quiet-signal/ /quiet-signal/research.html /quiet-signal/data.js /quiet-signal/assets/piko/spritesheet.webp / /seventh-seat/ /first-notice/ /schrodingers_civ/; do
+for path in /quiet-signal/ /quiet-signal/research.html /quiet-signal/last-reversible-moment/ /quiet-signal/data.js /quiet-signal/assets/piko/spritesheet.webp / /seventh-seat/ /first-notice/ /schrodingers_civ/; do
   code="$(curl -s -o /dev/null -w '%{http_code}' "$SITE$path")"; echo "  $code  $path"; [[ "$code" == 200 ]] || fail=1
 done
 live="$(curl -fsS "$SITE/quiet-signal/RELEASE.json?$(date +%s)" | sha256sum | cut -d' ' -f1)"
